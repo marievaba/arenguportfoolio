@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  background-color: #dedede;
+  font-family:'Roboto Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
