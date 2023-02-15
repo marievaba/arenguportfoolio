@@ -1,7 +1,5 @@
-import { makeStyles, Theme } from "@material-ui/core";
-import shadows from "@material-ui/core/styles/shadows";
-
 import { createTheme } from '@mui/material/styles';
+import { makeStyles, Theme } from "@material-ui/core";
 
 declare module '@mui/material/styles' {
     interface Theme {
@@ -82,7 +80,7 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         paddingBottom: "25px",
     },
     marginTop: {
-        marginTop: "65px",
+        marginTop: "35px",
     },
     typo: {
         alignSelf: "center",
@@ -106,10 +104,55 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         textTransform: "lowercase",
         borderRadius: "50px",
         background: " #F9C8D0",
+        textDecoration: "none",
         boxShadow: "20px 20px 60px #bebebe, -20px -20px 60px #ffffff",
         '&:hover': {
             backgroundColor: "#F391A1",
             color: "#fff",
         }
     },
+    noUnderline: {
+        underline:"none",
+        textDecoration:"none",
+    },
+    link: {
+        underline:"none",
+        textDecoration:"none",
+        color: "#004B52",
+        fontWeight: 700,
+        '&:hover': {
+            color: "#F391A1",
+        }
+    },
+    cvLink: {
+        textDecoration:"none",
+        color: "#000",
+    },
+    headingCenter: {
+        display: "flex",
+        justifyContent: "center",
+    },
+    contentMargin: {
+        marginLeft: "35px",
+    },
+    divider: {
+        width:"100%",
+        borderBottom:"2px solid black",
+        margin: "35px",
+    },
+    shortDivider: {
+        width:"100%",
+        borderBottom:"2px solid #F391A1",
+        marginTop: "25px",
+        marginBottom: "25px",
+    },
+    shortDividerLeft: {
+        width:"100%",
+        borderBottom:"2px solid #F391A1",
+        marginTop: "25px",
+        marginBottom: "25px",
+    },
+    boldInside: {
+        fontWeight: 500,
+    }
 }));

@@ -1,14 +1,12 @@
-import { Button, ThemeProvider } from "@material-ui/core";
 import React from "react";
+import { Button, ThemeProvider } from "@material-ui/core";
 import { theme, useStyles } from "./styles";
 
 interface Props {
     children: React.ReactNode
 }
 
-const CustomButton: React.FC<Props> = ({
-    children
-}) => {
+const CustomButton: React.FC<Props> = (props: Props) => {
     const classes = useStyles()
     return (
         <ThemeProvider theme={theme}>
@@ -17,7 +15,7 @@ const CustomButton: React.FC<Props> = ({
             color="primary"
             className={classes.button}
         >
-            {children}
+            {props.children}
         </Button>
         </ThemeProvider>
     )

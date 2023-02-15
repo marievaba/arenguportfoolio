@@ -1,82 +1,58 @@
+import { Grid } from '@mui/material';
 import { Typography } from "@material-ui/core";
-import { makeStyles, Theme } from "@material-ui/core/styles";
-import { Button, Grid } from '@mui/material';
-import React from 'react';
-import image from "./pilt.jpg";
-import './App.css';
+import Enesetutvustus from "./pages/Enesetutvustus";
 import CustomButton from "./CustomButton";
+import Moodulid from './pages/Moodulid';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { useStyles } from "./styles";
-
+import './App.css';
+import Praktika from './pages/Praktika';
+import Koolitused from './pages/Koolitused';
+import Eneserefleksioon from './pages/Eneserefleksioon';
 
 function App() {
   const classes = useStyles();
 
   return (
     <div className="main">
-
-      <Grid
-        sm={12}
-        className={classes.center}
-      >
         <Grid
-          className={classes.typo}
-        >
-          <Typography
-            className={classes.typo}
-          >
-            arenguportfoolio
-          </Typography>
-        </Grid>
-
-        <CustomButton>Enesetutvustus</CustomButton>
-        <CustomButton>Moodulid</CustomButton>
-        <CustomButton>Praktika</CustomButton>
-        <CustomButton>Koolitused</CustomButton>
-        <CustomButton>Eneserefleksioon</CustomButton>
-      </Grid>
-
-      <Grid
-        container
-        sm={12}
-        className={classes.marginTop}
-      >
-        <Grid
-          container
-          className={classes.pilt}
-          sm={5}
+          sm={12}
+          className={classes.center}
         >
           <Grid
-            sm={12}
-            className={classes.pilt}
-          >
-            <img className={classes.image} src={image} />
-          </Grid>
-          <Grid
-            className={classes.pilt}
-            sm={12}
-          >
-            <CustomButton>CV</CustomButton>
-          </Grid>
-        </Grid>
-
-        <Grid
-          sm={7}
-          className={classes.sisu}
-        >
-          <Typography
             className={classes.typo}
           >
-            mina olen Marie
-          </Typography>
-          <p className={classes.sisutekst}>
-            Mina olen Marie, 23. Õpin kasutajakogemuse disaini nooremspetsialistiks Tartu Rakenduslikus Kolledžis. Eelnevalt õppisin Tartu Kunstikoolis kujundusgraafikuks ja aastakese Järvamaa Kutsehariduskeskuses hobuhooldajaks.<br></br>
-            Tahan luua ilusaid ja kergesti kasutatavaid lahendusi. Esimese kursuse praktika sooritasin Saksamaal, tänu sellele saan hakkama uutes olukordades ja võõrastes keskkondades. Ma ei karda suhelda ja vajadusel abi küsida. Minu eesmärgiks on õppida võimalikult palju UX/UI kohta, saada tagasisidet ja selle põhjal areneda.<br></br>
-            Otsutasin antud eriala valida, sest mulle meeldib asju ise teha ja kohe tulemusi näha ning ITs on tulevik, ma ei taha elu lõpuni töötada klienditeeninduses.. Varasem kogemus on minimaalne, Kunstikoolis tutvusime natuke HTMLi ja CSSiga.<br></br>
-            Mulle meeldib väga ka tänavakunst ja sõbrannaga teeme kleepse nimega Libutigu. Kunstikoolis osalesin kursusekaaslasega COOP toidukunsti võistlusel ja ka võitsime selle.
-          </p>
-        </Grid>
-      </Grid>
+            <Typography
+              className={classes.typo}
+            >
+              arenguportfoolio
+            </Typography>
+          </Grid>
 
+          <Link className={classes.noUnderline} to="/">
+            <CustomButton>Enesetutvustus</CustomButton>
+          </Link>
+          <Link className={classes.noUnderline} to="/moodulid">
+            <CustomButton>Moodulid</CustomButton>
+          </Link>
+          <Link className={classes.noUnderline} to="/praktika">
+            <CustomButton>Praktika</CustomButton>
+          </Link>
+          <Link className={classes.noUnderline} to="/koolitused">
+            <CustomButton>Koolitused</CustomButton>
+          </Link>
+          <Link className={classes.noUnderline} to="/eneserefleksioon">
+            <CustomButton>Eneserefleksioon</CustomButton>
+          </Link>
+        </Grid>
+
+        <Routes>
+          <Route path="/" element={<Enesetutvustus />} />
+          <Route path="/moodulid" element={<Moodulid />} />
+          <Route path="/praktika" element={<Praktika />} />
+          <Route path="/koolitused" element={<Koolitused />} />
+          <Route path="/eneserefleksioon" element={<Eneserefleksioon />} />
+        </Routes>
     </div>
   );
 }
