@@ -79,6 +79,14 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         paddingTop: "25px",
         paddingBottom: "25px",
     },
+    sisuResponsive: {
+        width: "100%",
+        height: "auto",
+        justifyContent: "center",
+        paddingRight: "35px",
+        paddingTop: "25px",
+        paddingBottom: "25px",
+    },
     marginTop: {
         marginTop: "35px",
     },
@@ -154,5 +162,9 @@ export const useStyles = makeStyles<Theme>((theme) => ({
     },
     boldInside: {
         fontWeight: 500,
+    },
+    icon: {
+        width: "15px",
+        height: "15px",
     }
 }));

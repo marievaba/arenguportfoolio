@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material';
+import { Grid, useMediaQuery } from '@mui/material';
 import { Typography } from "@material-ui/core";
 import Enesetutvustus from "./pages/Enesetutvustus";
 import CustomButton from "./CustomButton";
@@ -12,9 +12,11 @@ import Eneserefleksioon from './pages/Eneserefleksioon';
 
 function App() {
   const classes = useStyles();
+  const atLeastSm = useMediaQuery('(min-width:600px)');
 
   return (
     <div className="main">
+      {atLeastSm ?
         <Grid
           sm={12}
           className={classes.center}
@@ -28,6 +30,7 @@ function App() {
               arenguportfoolio
             </Typography>
           </Grid>
+
 
           <Link className={classes.noUnderline} to="/">
             <CustomButton>Enesetutvustus</CustomButton>
@@ -44,15 +47,29 @@ function App() {
           <Link className={classes.noUnderline} to="/eneserefleksioon">
             <CustomButton>Eneserefleksioon</CustomButton>
           </Link>
-        </Grid>
 
-        <Routes>
-          <Route path="/" element={<Enesetutvustus />} />
-          <Route path="/moodulid" element={<Moodulid />} />
-          <Route path="/praktika" element={<Praktika />} />
-          <Route path="/koolitused" element={<Koolitused />} />
-          <Route path="/eneserefleksioon" element={<Eneserefleksioon />} />
-        </Routes>
+        </Grid>
+        :
+        <>
+        <Grid
+            className={classes.typo}
+          >
+            <Typography
+              className={classes.typo}
+            >
+              arenguportfoolio
+            </Typography>
+          </Grid>
+        </>
+      }
+
+      <Routes>
+        <Route path="/" element={<Enesetutvustus />} />
+        <Route path="/moodulid" element={<Moodulid />} />
+        <Route path="/praktika" element={<Praktika />} />
+        <Route path="/koolitused" element={<Koolitused />} />
+        <Route path="/eneserefleksioon" element={<Eneserefleksioon />} />
+      </Routes>
     </div>
   );
 }
