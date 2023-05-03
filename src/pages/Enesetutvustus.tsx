@@ -1,4 +1,4 @@
-import { Grid, Tooltip, useMediaQuery } from '@mui/material';
+import { Grid} from '@mui/material';
 import { Typography } from "@material-ui/core";
 import image from "../pilt.jpg";
 import linkedin from "../linkedin.png";
@@ -7,7 +7,6 @@ import { useStyles } from "../styles";
 
 const Enesetutvustus = () => {
     const classes = useStyles();
-    const atLeastSm = useMediaQuery('(min-width:600px)');
     return (
         <Grid
             container
@@ -43,9 +42,8 @@ const Enesetutvustus = () => {
             </Grid>
 
             <Grid
-                sm={atLeastSm ? 7 : 12}
-                className={`${atLeastSm ? classes.sisu : classes.sisuResponsive} 
-                ${atLeastSm ? "" : classes.contentMargin}`}
+                sm={7}
+                className={`${classes.sisu} `}
             >
                 <Typography
                     className={classes.typo}

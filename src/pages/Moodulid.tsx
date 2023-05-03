@@ -8,6 +8,7 @@ import { useRef } from "react";
 function Moodulid() {
   const classes = useStyles();
   const veebiarendusRef = useRef(null)
+  const veebikujundusRef = useRef(null)
 
   const handleScroll = () => {
     setTimeout(() => {
