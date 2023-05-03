@@ -1,3 +1,4 @@
+import React from 'react';
 import { Grid} from '@mui/material';
 import { Typography } from "@material-ui/core";
 import image from "../pilt.jpg";

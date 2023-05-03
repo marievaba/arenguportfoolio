@@ -1,3 +1,4 @@
+import React from 'react';
 import { Typography } from "@material-ui/core";
 import { Grid, useMediaQuery } from "@mui/material";
 import { useStyles } from "../styles";

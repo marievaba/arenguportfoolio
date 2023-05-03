@@ -1,9 +1,10 @@
-import { Grid, useMediaQuery } from '@mui/material';
+import React from 'react';
+import { Grid } from '@mui/material';
 import { Typography } from "@material-ui/core";
 import Enesetutvustus from "./pages/Enesetutvustus";
 import CustomButton from "./CustomButton";
 import Moodulid from './pages/Moodulid';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import { useStyles } from "./styles";
 import './App.css';
 import Praktika from './pages/Praktika';
@@ -12,7 +13,6 @@ import Eneserefleksioon from './pages/Eneserefleksioon';
 
 function App() {
   const classes = useStyles();
-  const atLeastSm = useMediaQuery('(min-width:600px)');
 
   return (
     <div className="main">
