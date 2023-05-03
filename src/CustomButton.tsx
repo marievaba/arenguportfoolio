@@ -4,6 +4,7 @@ import { theme, useStyles } from "./styles";
 
 interface Props {
     children: React.ReactNode
+    fullWidth?: boolean
 }
 
 const CustomButton: React.FC<Props> = (props: Props) => {
@@ -13,7 +14,7 @@ const CustomButton: React.FC<Props> = (props: Props) => {
         <Button
             variant="contained"
             color="primary"
-            className={classes.button}
+            className= {`${classes.button} ${props.fullWidth ? classes.buttonWidth : ""}`}
         >
             {props.children}
         </Button>

@@ -59,7 +59,7 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         paddingLeft: "35px",
         paddingRight: "35px",
         paddingTop: "25px",
-        paddingBottom: "25px",
+        paddingBottom: "15px",
     },
     pilt: {
         width: "40%",
@@ -93,8 +93,21 @@ export const useStyles = makeStyles<Theme>((theme) => ({
     typo: {
         alignSelf: "center",
         fontFamily:"'Roboto Mono', monospace",
-        fontSize:"1.25rem",
+        fontSize:"1.40rem",
         fontWeight: 700,
+    },
+    alampealkiri: {
+        alignSelf: "center",
+        fontFamily:"'Roboto Mono', monospace",
+        fontSize:"1.125rem",
+        fontWeight: 700,
+    },
+    typoCenter: {
+        alignSelf: "center",
+        fontFamily:"'Roboto Mono', monospace",
+        fontSize:"1.40rem",
+        fontWeight: 700,
+        textAlign: "center",
     },
     image: {
         width:"200px",
@@ -117,6 +130,11 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         '&:hover': {
             backgroundColor: "#F391A1",
             color: "#fff",
+            '& .MuiButton-label': {
+                '& a': {
+                    color: "#fff",
+                }
+            }
         }
     },
     noUnderline: {
@@ -126,10 +144,10 @@ export const useStyles = makeStyles<Theme>((theme) => ({
     link: {
         underline:"none",
         textDecoration:"none",
-        color: "#004B52",
+        color: "#F391A1",
         fontWeight: 700,
         '&:hover': {
-            color: "#F391A1",
+            textDecoration: "underline",
         }
     },
     cvLink: {
@@ -143,6 +161,11 @@ export const useStyles = makeStyles<Theme>((theme) => ({
     contentMargin: {
         marginLeft: "35px",
     },
+    menuDivider: {
+        width:"100%",
+        borderBottom:"2px solid black",
+        margin: "5px 0px 15px 0px"
+    },
     divider: {
         width:"100%",
         borderBottom:"2px solid black",
@@ -151,6 +174,12 @@ export const useStyles = makeStyles<Theme>((theme) => ({
     shortDivider: {
         width:"100%",
         borderBottom:"2px solid #F391A1",
+        marginTop: "25px",
+        marginBottom: "25px",
+    },
+    shortDividerBlack: {
+        width:"100%",
+        borderBottom:"2px solid #000",
         marginTop: "25px",
         marginBottom: "25px",
     },
@@ -166,5 +195,43 @@ export const useStyles = makeStyles<Theme>((theme) => ({
     icon: {
         width: "15px",
         height: "15px",
-    }
+    },
+    fullWidth: {
+        width: "100%",
+    },
+    buttonWidth: {
+        boxShadow:"none",
+        width: "100%",
+        marginBottom: "13px",
+        '& span': {
+            color: "black",
+        },
+        "& .MuiButton-label": {
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textAlign: "left",
+            display: "block"
+        },
+        '&:hover': {
+            minWidth:"100%",
+            width: "inherit",
+            "& .MuiButton-label": {
+                color: "#fff",
+                textOverflow: "visible",
+                whiteSpace: "nowrap",
+                overflow: "visible",
+                textAlign: "left",
+                display: "block"
+            },
+        }
+    },
+    menuPadding: {
+        paddingLeft: "35px",
+        paddingRight: "20px",
+        paddingTop:"15px",
+    },
+    sisuPadding: {
+        paddingLeft: "20px",
+    },
 }));

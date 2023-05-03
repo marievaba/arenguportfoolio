@@ -16,7 +16,6 @@ function App() {
 
   return (
     <div className="main">
-      {atLeastSm ?
         <Grid
           sm={12}
           className={classes.center}
@@ -47,21 +46,8 @@ function App() {
           <Link className={classes.noUnderline} to="/eneserefleksioon">
             <CustomButton>Eneserefleksioon</CustomButton>
           </Link>
-
         </Grid>
-        :
-        <>
-        <Grid
-            className={classes.typo}
-          >
-            <Typography
-              className={classes.typo}
-            >
-              arenguportfoolio
-            </Typography>
-          </Grid>
-        </>
-      }
+        <Grid className={classes.menuDivider} />
 
       <Routes>
         <Route path="/" element={<Enesetutvustus />} />
