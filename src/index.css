@@ -87,6 +87,9 @@ code {
 }
 
 @media (max-width: 520px) {
+  .blob {
+    display: none;
+  }
   .app-content {
     padding: 40px 20px
   }

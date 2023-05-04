@@ -36,7 +36,7 @@ const Enesetutvustus = () => {
         justifyContent="center"
         sx={{paddingTop: {xs: "20px", md: "60px"}}}
       >
-        <svg style={{
+        <svg className="blob" style={{
           position: "absolute",
           left: 200,
           top: 0,
