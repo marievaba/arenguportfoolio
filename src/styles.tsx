@@ -61,29 +61,11 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         paddingTop: "25px",
         paddingBottom: "15px",
     },
-    pilt: {
-        width: "40%",
-        height: "auto",
-        display: "flex",
-        justifyContent: "center",
-        paddingLeft: "85px",
-        paddingTop: "25px",
-        paddingBottom: "25px",
-        alignSelf: "center",
-    },
     sisu: {
         width: "40%",
         height: "auto",
         justifyContent: "center",
         paddingRight: "100px",
-        paddingTop: "25px",
-        paddingBottom: "25px",
-    },
-    sisuResponsive: {
-        width: "100%",
-        height: "auto",
-        justifyContent: "center",
-        paddingRight: "35px",
         paddingTop: "25px",
         paddingBottom: "25px",
     },
@@ -110,9 +92,9 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         textAlign: "center",
     },
     image: {
-        width:"200px",
-        height:"200px",
-        borderRadius:"100px",
+        width:"250px",
+        height:"250px",
+        borderRadius:"130px",
     },
     sisutekst: {
         fontFamily:'Roboto',
@@ -124,10 +106,13 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         fontFamily:"'Roboto Mono', monospace",
         textTransform: "lowercase",
         borderRadius: "50px",
-        background: " #F9C8D0",
+        border:" 2px solid #F17E92",
+        background: " #dedede",
         textDecoration: "none",
-        boxShadow: "20px 20px 60px #bebebe, -20px -20px 60px #ffffff",
+        /* boxShadow: "20px 20px 60px #bebebe, -20px -20px 60px #ffffff", */
+        boxShadow:"none",
         '&:hover': {
+            boxShadow:"none",
             backgroundColor: "#F391A1",
             color: "#fff",
             '& .MuiButton-label': {

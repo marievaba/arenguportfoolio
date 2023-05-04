@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Typography } from "@material-ui/core";
 import { Grid } from "@mui/material";
 import { useStyles } from "../styles";
 
 const Praktika = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  });
+
   const classes = useStyles();
   return (
     <Grid
       container
-      sm={12}
-      className={classes.marginTop}
+      md={12}
+      spacing={4}
     >
-
       {/* SPETSIALISEERUMISPRAKTIKA */}
-
       <Grid
-        sm={5}
-        className={`${classes.sisu} ${classes.contentMargin}`}
+        item
+        md={6}
       >
         <Typography
           className={classes.typo}
@@ -63,8 +65,8 @@ const Praktika = () => {
       </Grid>
 
       <Grid
-        sm={6}
-        className={`${classes.sisu} ${classes.contentMargin}`}
+        item
+        md={6}
       >
         <Typography
           className={classes.typo}
@@ -90,14 +92,12 @@ const Praktika = () => {
         </p>
       </Grid>
 
-
       <Grid className={classes.divider} />
-
 
       {/* TUTVUMISPRAKTIKA */}
       <Grid
-        sm={5}
-        className={`${classes.sisu} ${classes.contentMargin}`}
+        item
+        md={6}
       >
         <Typography
           className={classes.typo}
@@ -136,12 +136,11 @@ const Praktika = () => {
           •	leida seoseid koolis õpitu ja töömaailma vahel<br></br>
           •	täiendada oma teadmisi ja praktilisi oskusi kasutajakogemuse disaini valdkonnas
         </p>
-
       </Grid>
 
       <Grid
-        sm={6}
-        className={`${classes.sisu} ${classes.contentMargin}`}
+        item
+        md={6}
       >
         <Typography
           className={classes.typo}

@@ -1,15 +1,89 @@
 body {
   height: 100vh;
-  width: auto;
-  margin: 0;
+  padding-top: 90px;
   background-color: #dedede;
+  margin: 0;
   font-family:'Roboto Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
 }
 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.burger-button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-button {
+  color: #000;
+}
+
+.close-button:hover {
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/*Navigation Inner Styling*/
+.nav ul li .nav-link:hover {
+  color: #fff;
+}
+
+.nav ul li .nav-link {
+  padding: 10px 0 10px 0;
+  display: inline-block;
+  color: #000;
+  height: 100%;
+  width: 100%;
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size:3vw;
+  text-decoration: none;
+  font-family:"'Roboto Mono', monospace",
+}
+
+.nav ul li {
+  display: inline-block;
+  font-size: 3em;
+  width: 100%;
+}
+
+.nav ul {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+/*Landscape-Phone Downwards*/
+@media (max-width: 480px) {
+  .nav ul {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav ul li .nav-link {
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 8vw;
+    letter-spacing: -0.05em;
+  }
+}
+
+@media (max-width: 980px) {
+  .MuiButton-root {
+    padding: 6px 6px !important
+  }
 }

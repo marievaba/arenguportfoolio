@@ -1,68 +1,72 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid } from "@mui/material";
 import { Typography } from "@material-ui/core";
-import { Link } from "react-router-dom";
 import CustomButton from "../CustomButton";
 import { useStyles } from "../styles";
 import { useRef } from "react";
 
 function Moodulid() {
-  const classes = useStyles();
-  const veebiarendusRef = useRef(null)
-  const veebikujundusRef = useRef(null)
+  useEffect(() => {
+    window.scrollTo({top: 0})
+  });
 
-  const handleScroll = () => {
-    setTimeout(() => {
-      // @ts-ignore
-      veebiarendusRef.current.scrollIntoView({
+  const classes = useStyles();
+  const veebiarendusRef = useRef(null);
+  const kasutajakogemusRef = useRef(null);
+  const psühholoogiaRef = useRef(null);
+  const riistvaraRef = useRef(null);
+  const programmeerimiseRef = useRef(null);
+  const projektijuhtimiseRef = useRef(null);
+  const ainedRef = useRef(null);
+  const karjääriplaneerimineRef = useRef(null);
+  const arenguportfoolioRef = useRef(null);
+
+  // @ts-ignore
+  const handleScroll = (ref) => {
+      ref.current.scrollIntoView({
         behavior: "smooth"
       })
-    }, 500)
   } 
   return (
     <Grid
       container
       sm={12}
-      className={classes.menuPadding}
     >
       <Grid container spacing={2}>
-        <Grid item xs={2}>
-          <Link className={`${classes.noUnderline}`} to="#veebikujundus">
-            <CustomButton fullWidth={true}> Veebikujundus</CustomButton>
-          </Link>
-          <Link className={classes.noUnderline} onClick={() => handleScroll()} to={{
-            pathname: "/moodulid"
-          }}>
-            <CustomButton fullWidth={true}>  Veebiarendus ja veebihaldus </CustomButton>
-          </Link>
-          <Link className={classes.noUnderline} to="/praktika">
-            <CustomButton fullWidth={true}>Kasutajakogemuse analüüs</CustomButton>
-          </Link>
-          <Link className={classes.noUnderline} to="/koolitused">
-            <CustomButton fullWidth={true}>Psühholoogia ja suhtlemine</CustomButton>
-          </Link>
-          <Link className={classes.noUnderline} to="/eneserefleksioon">
-            <CustomButton fullWidth={true}>Arvutite riistvara ja võrgud</CustomButton>
-          </Link>
-          <Link className={classes.noUnderline} to="/eneserefleksioon">
-            <CustomButton fullWidth={true}>Programmeerimise alused</CustomButton>
-          </Link>
-          <Link className={classes.noUnderline} to="/eneserefleksioon">
-            <CustomButton fullWidth={true}>Projektijuhtimise alused</CustomButton>
-          </Link>
-          <Link className={classes.noUnderline} to="/eneserefleksioon">
-            <CustomButton fullWidth={true}>varasemalt läbitud ained</CustomButton>
-          </Link>
-          <Link className={classes.noUnderline} to="/eneserefleksioon">
-            <CustomButton fullWidth={true}>Karjääriplaneerimine ja ettevõtlus</CustomButton>
-          </Link>
-          <Link className={classes.noUnderline} to="/eneserefleksioon">
-            <CustomButton fullWidth={true}>Arenguportfoolio loomine ja esitamine</CustomButton>
-          </Link>
+        <Grid item xs={2} style={{position: "fixed", top: 90, left: 0}}>
+          <CustomButton fullWidth={true} onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>
+            Veebikujundus
+          </CustomButton>
+          <CustomButton fullWidth={true} onClick={() => handleScroll(veebiarendusRef)}>
+            Veebiarendus ja veebihaldus
+          </CustomButton>
+          <CustomButton fullWidth={true} onClick={() => handleScroll(kasutajakogemusRef)}>
+            Kasutajakogemuse analüüs
+          </CustomButton>
+          <CustomButton fullWidth={true} onClick={() => handleScroll(psühholoogiaRef)}>
+            Psühholoogia ja suhtlemine
+          </CustomButton>
+          <CustomButton fullWidth={true} onClick={() => handleScroll(riistvaraRef)}>
+            Arvutite riistvara ja võrgud
+          </CustomButton>
+          <CustomButton fullWidth={true} onClick={() => handleScroll(programmeerimiseRef)}>
+            Programmeerimise alused
+          </CustomButton>
+          <CustomButton fullWidth={true} onClick={() => handleScroll(projektijuhtimiseRef)}>
+            Projektijuhtimise alused
+          </CustomButton>
+          <CustomButton fullWidth={true} onClick={() => handleScroll(ainedRef)}>
+            varasemalt läbitud ained
+          </CustomButton>
+          <CustomButton fullWidth={true} onClick={() => handleScroll(karjääriplaneerimineRef)}>
+            Karjääriplaneerimine ja ettevõtlus
+          </CustomButton>
+          <CustomButton fullWidth={true} onClick={() => handleScroll(arenguportfoolioRef)}>
+            Arenguportfoolio loomine ja esitamine
+          </CustomButton>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={10} style={{paddingLeft: 250}}>
           <Grid className={classes.sisuPadding}>
-
             <Typography
               className={classes.typoCenter}
               id="veebikujundus"
@@ -179,6 +183,7 @@ function Moodulid() {
 
             <Grid className={classes.shortDivider} />
 
+            <Grid container spacing={2} >
             <Grid item xs={5}>
               <Typography
                 className={classes.alampealkiri}
@@ -189,7 +194,11 @@ function Moodulid() {
                 Kursuse raames omandatakse teadmised kasutuskogemuse testi põhimõtetest. Aine jooksul viime läbi testi mõnel enda koostatud prototüübil. Lasin kasutajatel testida enda aasta tegija võistlustööd, tagasiside oli positiivne ja muudatusi sisse ei viinud.
               </p>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={7}>
+            <svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#FFE299" d="M42,-46C53.1,-31,59.7,-15.5,59.9,0.3C60.2,16,54.1,32,43,40.1C32,48.3,16,48.6,2.9,45.7C-10.2,42.8,-20.4,36.7,-33.1,28.5C-45.9,20.4,-61.1,10.2,-67.3,-6.1C-73.4,-22.4,-70.3,-44.9,-57.6,-59.9C-44.9,-74.9,-22.4,-82.4,-3.5,-79C15.5,-75.5,31,-61,42,-46Z" transform="translate(100 100)" />
+                </svg>
+            </Grid>
             </Grid>
 
             <Grid className={classes.shortDivider} />
@@ -305,7 +314,7 @@ function Moodulid() {
             <Grid item xs={5}>
             </Grid>
 
-            <Grid className={classes.shortDividerBlack} />
+            <Grid className={classes.shortDividerBlack} ref={kasutajakogemusRef} />
 
             <Typography
               className={classes.typoCenter}
@@ -373,7 +382,7 @@ function Moodulid() {
             <Grid item xs={5}>
             </Grid>
 
-            <Grid className={classes.shortDividerBlack} />
+            <Grid className={classes.shortDividerBlack} ref={psühholoogiaRef} />
 
 
             <Typography
@@ -427,7 +436,7 @@ function Moodulid() {
             <Grid item xs={5}>
             </Grid>
 
-            <Grid className={classes.shortDividerBlack} />
+            <Grid className={classes.shortDividerBlack} ref={riistvaraRef} />
 
 
             <Typography
@@ -496,7 +505,7 @@ function Moodulid() {
             <Grid item xs={5}>
             </Grid>
 
-            <Grid className={classes.shortDividerBlack} />
+            <Grid className={classes.shortDividerBlack} ref={programmeerimiseRef} />
 
 
             <Typography
@@ -551,7 +560,7 @@ function Moodulid() {
             <Grid item xs={5}>
             </Grid>
 
-            <Grid className={classes.shortDividerBlack} />
+            <Grid className={classes.shortDividerBlack} ref={projektijuhtimiseRef} />
 
             <Typography
               className={classes.typoCenter}
@@ -605,7 +614,7 @@ function Moodulid() {
             </Grid>
 
 
-            <Grid className={classes.shortDividerBlack} />
+            <Grid className={classes.shortDividerBlack} ref={ainedRef} />
 
             <Typography
               className={classes.typoCenter}
@@ -629,7 +638,7 @@ function Moodulid() {
             </Grid>
 
 
-            <Grid className={classes.shortDividerBlack} />
+            <Grid className={classes.shortDividerBlack} ref={karjääriplaneerimineRef} />
 
             <Typography
               className={classes.typoCenter}
@@ -727,7 +736,7 @@ function Moodulid() {
             <Grid item xs={5}>
             </Grid>
 
-            <Grid className={classes.shortDividerBlack} />
+            <Grid className={classes.shortDividerBlack} ref={arenguportfoolioRef} />
 
             <Typography
               className={classes.typoCenter}

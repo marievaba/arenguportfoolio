@@ -5,6 +5,8 @@ import { theme, useStyles } from "./styles";
 interface Props {
     children: React.ReactNode
     fullWidth?: boolean
+    onClick?: () => void;
+    style?: React.CSSProperties;
 }
 
 const CustomButton: React.FC<Props> = (props: Props) => {
@@ -15,6 +17,8 @@ const CustomButton: React.FC<Props> = (props: Props) => {
             variant="contained"
             color="primary"
             className= {`${classes.button} ${props.fullWidth ? classes.buttonWidth : ""}`}
+            onClick={props.onClick}
+            style={props.style}
         >
             {props.children}
         </Button>
