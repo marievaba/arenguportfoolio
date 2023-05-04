@@ -53,7 +53,6 @@ code {
 
 .nav ul li {
   display: inline-block;
-  font-size: 3em;
   width: 100%;
 }
 
@@ -74,7 +73,7 @@ code {
   }
 
   .nav ul li .nav-link {
-    padding: 0;
+    padding: 8px 0;
     font-weight: 700;
     font-size: 6vw;
     letter-spacing: -0.05em;
