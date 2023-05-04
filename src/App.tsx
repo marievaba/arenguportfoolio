@@ -101,7 +101,7 @@ function App() {
             }}
           >
             <Box>
-              <Grid style={{ width: "100%", height: 100, paddingBottom: 20 }}>
+              <Grid style={{ width: "100%" }}>
                 <CloseIcon className="close-button" onClick={handleClose} style={{
                   height: 30,
                   width: 30,
@@ -111,7 +111,7 @@ function App() {
                   borderRadius: "50%",
                 }}></CloseIcon>
               </Grid>
-              <Grid style={{ width: "100%", height: 300, paddingBottom: 20 }}>
+              <Grid style={{ width: "100%", paddingBottom: 20 }}>
                 <div className="nav">
                   <ul>
                     <li><Link className="nav-link" to="/" onClick={handleClose}>enesetutvustus</Link></li>
