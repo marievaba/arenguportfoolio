@@ -75,10 +75,11 @@ code {
 
   .nav ul li .nav-link {
     padding: 0;
-    text-transform: uppercase;
     font-weight: 700;
-    font-size: 8vw;
+    font-size: 6vw;
     letter-spacing: -0.05em;
+    text-decoration: none;
+    font-family:"'Roboto Mono', monospace",
   }
 }
 
