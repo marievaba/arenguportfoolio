@@ -13,8 +13,7 @@ const Enesetutvustus = () => {
   const classes = useStyles();
   return (
     <Grid container md={12}>
-      <Grid container md={5} alignItems="center" direction="column" style={{
-        paddingTop: 100
+      <Grid container md={5} className="img-container" alignItems="center" direction="column" style={{
       }}>
         <img className={classes.image} src={image} />
         <Grid item style={{paddingTop: 20}}>

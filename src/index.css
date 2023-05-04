@@ -86,12 +86,22 @@ code {
   padding: 40px 100px
 }
 
+.img-container {
+  padding-top: 100px;
+}
+
 @media (max-width: 520px) {
   .blob {
     display: none;
   }
   .app-content {
     padding: 40px 20px
+  }
+}
+
+@media (max-width: 900px) {
+  .img-container {
+    padding-top: 0px;
   }
 }
 
