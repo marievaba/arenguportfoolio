@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Dialog, Grid, IconButton, Modal, SvgIcon } from '@mui/material';
+import { Box, Dialog, Grid, IconButton, Modal, SvgIcon, useMediaQuery } from '@mui/material';
 import { Typography } from "@material-ui/core";
 import Enesetutvustus from "./pages/Enesetutvustus";
 import CustomButton from "./CustomButton";
@@ -25,6 +25,7 @@ function App() {
   const [currentTab, setCurrentTab] = React.useState(window.location.pathname);
 
   const classes = useStyles();
+  const matches = useMediaQuery('max-width:520px)');
 
   return (
     <>
@@ -81,7 +82,7 @@ function App() {
           </Link>
         </Grid>
 
-        <Grid display={{ xs: 'block', sm: 'block', md: 'none' }} style={{ alignSelf: "center" }}>
+        <Grid display={{ sm: 'block', md: 'none' }} style={{ alignSelf: "center" }}>
           <MenuIcon className="burger-button"
             style={{ width: 40, height: 40 }}
             onClick={handleOpen}
@@ -127,7 +128,7 @@ function App() {
         </Grid>
       </Grid>
       
-      <Grid style={{padding: "40px 100px 40px 100px"}}>
+      <Grid className="app-content">
         <Routes>
           <Route path="/" element={<Enesetutvustus />} />
           <Route path="/moodulid" element={<Moodulid />} />

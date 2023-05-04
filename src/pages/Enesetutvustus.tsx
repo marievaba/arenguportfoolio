@@ -34,7 +34,7 @@ const Enesetutvustus = () => {
         md={7}
         direction="column"
         justifyContent="center"
-        sx={{paddingTop: {sm: 0, md: "60px"}}}
+        sx={{paddingTop: {xs: "20px", md: "60px"}}}
       >
         <svg style={{
           position: "absolute",
