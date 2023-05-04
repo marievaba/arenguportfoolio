@@ -101,7 +101,7 @@ function App() {
             }}
           >
             <Box>
-              <Grid className="close-button-container" style={{ width: "100%" }}>
+              <Grid className="close-button-container">
                 <CloseIcon className="close-button" onClick={handleClose} style={{
                   height: 30,
                   width: 30,
