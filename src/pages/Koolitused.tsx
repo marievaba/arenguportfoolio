@@ -59,6 +59,8 @@ const Koolitused = () => {
         <p className={classes.sisutekst}>
           15.10.2021 külastasime disaini ettevõtet Nope Creative ja tarkvaraarenduse ettevõtet GotoandPlay. Mõlemad firmaf asuvad sama katuse all ja teevad koostööd. Õppekäiku viis läbi Nope ettevõtte müügi- ja projektijuht Kristel-Maria Kadajane. Ta rääkis meile lähemalt, kuidas ettevõtte toimib ja milliste omadustega disainereid nad oma tiimi ootavad. Lisaks näitas ta meile mõningaid ettevõtte projekte ning kuidas nad erinevates protsessides toimetavad.
         </p>
+        <Grid className={classes.shortDivider} />
+        
       </Grid>
 
       <Grid
@@ -98,6 +100,8 @@ const Koolitused = () => {
         <p className={classes.sisutekst}>
           14.10.2021 Google koolituse raames saime teadmised digiturnudusest Youtubes. Rääkisime lähemalt, kuidas ennast reklaamida, kuidas teha seda kõige optimaalsemalt ning kuidas püüda klientide tähelepanu.
         </p>
+        <Grid className={classes.shortDivider} />
+
       </Grid>
     </Grid>
   )

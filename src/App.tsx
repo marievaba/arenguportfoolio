@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Dialog, Grid, IconButton, Modal, SvgIcon, useMediaQuery } from '@mui/material';
+import { Box, Dialog, Grid } from '@mui/material';
 import { Typography } from "@material-ui/core";
 import Enesetutvustus from "./pages/Enesetutvustus";
 import CustomButton from "./CustomButton";
@@ -13,31 +13,26 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
 function App() {
-
-  const isActiveLink = (link: string) => {
-    console.log(window.location.pathname)
-    return window.location.pathname === link;
-  } 
-
+  const [currentTab, setCurrentTab] = React.useState(window.location.pathname);
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [currentTab, setCurrentTab] = React.useState(window.location.pathname);
 
   const classes = useStyles();
-  const matches = useMediaQuery('max-width:520px)');
 
   return (
     <>
       <Grid style={{
+        width: "100%",
         height: 90,
+        display: "flex",
+        justifyContent: "space-between",
         position: "fixed",
         top: 0,
         zIndex: 2,
         backgroundColor: "#F17E92",
-        padding: "25px 35px 25px 35px",
+        padding: "25px 35px",
       }}
-        className={classes.center}
       >
         <Grid
           className={classes.typo}
@@ -102,11 +97,7 @@ function App() {
           >
             <Box>
               <Grid className="close-button-container">
-                <CloseIcon className="close-button" onClick={handleClose} style={{
-                  height: 30,
-                  width: 30,
-                  borderRadius: "50%",
-                }}></CloseIcon>
+                <CloseIcon className="close-button" onClick={handleClose}></CloseIcon>
               </Grid>
               <Grid style={{ width: "100%", paddingBottom: 20 }}>
                 <div className="nav">

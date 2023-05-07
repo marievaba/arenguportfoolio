@@ -31,6 +31,7 @@ const Eneserefleksioon = () => {
           Praktikal sain omandatud teadmisi kasutada. Koolis tegin kõik tööd Adobe XDga aga praktikal võtsin eesmärgiks kasutada ainult Figma, et ka see selgeks saaks. Vahepeal on tunne, et pole eriti midagi õppinud, aga tehtud töid vaadates näeb, et miskit ikka jäi külge ja uusi teadmisi ning oskusi on omajagu.
         </p>
         <Grid>
+        <Grid className={classes.shortDivider} />
           <Typography
             className={classes.typo}
           >
@@ -40,9 +41,11 @@ const Eneserefleksioon = () => {
           <p className={classes.sisutekst}>
             aasta tegija 2.koht<br></br>
             välispraktika Saksamaal<br></br>
-            praktika front-end arendajana
+            praktika front-end arendajana<br></br>
+            töökoht arendajana
           </p>
         </Grid>
+        <Grid className={classes.shortDivider} />
       </Grid>
 
       <Grid
@@ -59,9 +62,8 @@ const Eneserefleksioon = () => {
           Põhiline rõhk oli praktikakoha leidmisel kuna selleks oli aega ainult viis nädalat. Kirjutasin e-maile, täiendasin oma CVd ja tegin portfoolio. Tunnen end IT maailmas juba natuke kindlamalt, sellele aitab kaasa ka väga hea praktikakoht.<br></br>
           Praktikaperioodi jooksul õppisin arendustiimis töötama, tagasiside põhjal oma tööd muutma, uusi keskkondi ja programme kasutama ning täiendasin oma koodikirjutamise oskuseid. Sain väärtusliku kogemuse erialases töökeskkonnas, omandasin suhtlemise, meeskonnas töötamise ja enesedistsipliini oskusi.<br></br>
           Üldiselt tunnen, et minu areng on olnud suur. Oktoobris olin inimene, kes ei julgenud teha koodis muudatusi, kartes et see lõhub midagi ära. Küsisin iga asjaga abi ja mõnikord ei saanud ka siis aru, mida ma täpselt tegema pean. Täna olen inimene, kes leiab iseseisvalt lahendusi, pakub ise välja ideid ja ei karda enam küsida, kui ei leia midagi üles või täpselt aru ei saa. Lisaks leian koodist üles ka kohti, mille leidmiseks minult abi palutakse. Ma ei anna alla kui kohe lahendust ei leia, võimalusel võtan ette teise pileti, et mõtted eemale saada ja vaatan hiljem probleemi uuesti värskema pilguga.
-
-
         </p>
+        <Grid className={classes.shortDivider} />
       </Grid>
     </Grid >
   )

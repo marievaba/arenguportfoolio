@@ -51,24 +51,6 @@ export const theme = createTheme({
 });
 
 export const useStyles = makeStyles<Theme>((theme) => ({
-    center: {
-        width: "100%",
-        height: "auto",
-        display: "flex",
-        justifyContent: "space-between",
-        paddingLeft: "35px",
-        paddingRight: "35px",
-        paddingTop: "25px",
-        paddingBottom: "15px",
-    },
-    sisu: {
-        width: "40%",
-        height: "auto",
-        justifyContent: "center",
-        paddingRight: "100px",
-        paddingTop: "25px",
-        paddingBottom: "25px",
-    },
     marginTop: {
         marginTop: "35px",
     },

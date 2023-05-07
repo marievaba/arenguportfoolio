@@ -59,8 +59,9 @@ const Praktika = () => {
           •	leida seoseid koolis õpitu ja töömaailma vahel<br></br>
           •	täiendada oma teadmisi ja praktilisi oskusi kasutajakogemuse disaini valdkonnas<br></br>
           •	parandada oma võtmeoskusi (suhtlemise, probleemilahenduse, ajaplaneerimise-, koostöö- ja õppimisoskusi)<br></br>
-
         </p>
+
+        <Grid className={classes.shortDivider} />
 
       </Grid>
 
@@ -90,6 +91,8 @@ const Praktika = () => {
           töötamiseks, mida näitab ka see, et ta jätkab tulevikus meie
           ettevõttes töötajana.
         </p>
+        <Grid className={classes.shortDivider} />
+
       </Grid>
 
       <Grid className={classes.divider} />
@@ -136,6 +139,8 @@ const Praktika = () => {
           •	leida seoseid koolis õpitu ja töömaailma vahel<br></br>
           •	täiendada oma teadmisi ja praktilisi oskusi kasutajakogemuse disaini valdkonnas
         </p>
+        <Grid className={classes.shortDivider} />
+
       </Grid>
 
       <Grid
@@ -170,7 +175,7 @@ const Praktika = () => {
           <span className={classes.boldInside}>adaptability</span> - often had to adapt to changed requirements that came up from the daily feedback meetings (multiple solution iterations)<br></br>
         </p>
 
-
+        <Grid className={classes.shortDivider} />
 
       </Grid>
     </Grid>

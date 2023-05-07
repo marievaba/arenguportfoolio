@@ -37,11 +37,11 @@ const Enesetutvustus = () => {
       >
         <svg className="blob" style={{
           position: "absolute",
-          left: 200,
-          top: 0,
+          left: 250,
+          top: 20,
           overflow: "hidden",
           zIndex: "-1",
-        }} viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        }} viewBox="0 0 250 200" xmlns="http://www.w3.org/2000/svg">
           <path fill="#F17E92" d="M42,-46C53.1,-31,59.7,-15.5,59.9,0.3C60.2,16,54.1,32,43,40.1C32,48.3,16,48.6,2.9,45.7C-10.2,42.8,-20.4,36.7,-33.1,28.5C-45.9,20.4,-61.1,10.2,-67.3,-6.1C-73.4,-22.4,-70.3,-44.9,-57.6,-59.9C-44.9,-74.9,-22.4,-82.4,-3.5,-79C15.5,-75.5,31,-61,42,-46Z" transform="translate(100 100)" />
         </svg>
 
