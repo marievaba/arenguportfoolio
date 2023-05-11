@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Typography } from "@material-ui/core";
 import { Grid } from "@mui/material";
 import { useStyles } from "../styles";
+import libutigu from "../libutigu4.png";
 
 const Praktika = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const Praktika = () => {
   const classes = useStyles();
   return (
     <Grid
+      className="app-content"
       container
       md={12}
       spacing={4}
@@ -92,7 +94,10 @@ const Praktika = () => {
           ettevõttes töötajana.
         </p>
         <Grid className={classes.shortDivider} />
+        <Grid style={{ display: "flex", justifyContent: "center" }}>
+          <img width="65%" src={libutigu} />
 
+        </Grid>
       </Grid>
 
       <Grid className={classes.divider} />

@@ -116,15 +116,13 @@ function App() {
         </Grid>
       </Grid>
       
-      <Grid className="app-content">
-        <Routes>
-          <Route path="/" element={<Enesetutvustus />} />
-          <Route path="/moodulid" element={<Moodulid />} />
-          <Route path="/praktika" element={<Praktika />} />
-          <Route path="/koolitused" element={<Koolitused />} />
-          <Route path="/eneserefleksioon" element={<Eneserefleksioon />} />
-        </Routes>
-      </Grid>
+      <Routes>
+        <Route path="/" element={<Enesetutvustus />} />
+        <Route path="/moodulid" element={<Moodulid />} />
+        <Route path="/praktika" element={<Praktika />} />
+        <Route path="/koolitused" element={<Koolitused />} />
+        <Route path="/eneserefleksioon" element={<Eneserefleksioon />} />
+      </Routes>
     </>
   );
 }

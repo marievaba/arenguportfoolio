@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Typography } from "@material-ui/core";
 import { Grid } from "@mui/material";
 import { useStyles } from "../styles";
+import libutigu from "../libutigu6.png";
 
 const Koolitused = () => {
   useEffect(() => {
@@ -11,13 +12,15 @@ const Koolitused = () => {
   const classes = useStyles();
   return (
     <Grid
+      className="app-content"
       container
       md={12}
       spacing={4}
-    ><Grid
-      item
-      md={6}
     >
+      <Grid
+        item
+        md={6}
+      >
         <Typography
           className={classes.typo}
         >
@@ -60,12 +63,12 @@ const Koolitused = () => {
           15.10.2021 külastasime disaini ettevõtet Nope Creative ja tarkvaraarenduse ettevõtet GotoandPlay. Mõlemad firmaf asuvad sama katuse all ja teevad koostööd. Õppekäiku viis läbi Nope ettevõtte müügi- ja projektijuht Kristel-Maria Kadajane. Ta rääkis meile lähemalt, kuidas ettevõtte toimib ja milliste omadustega disainereid nad oma tiimi ootavad. Lisaks näitas ta meile mõningaid ettevõtte projekte ning kuidas nad erinevates protsessides toimetavad.
         </p>
         <Grid className={classes.shortDivider} />
-        
+
       </Grid>
 
       <Grid
         item
-        md={6}        
+        md={6}
       >
         <Typography
           className={classes.typo}
@@ -101,7 +104,9 @@ const Koolitused = () => {
           14.10.2021 Google koolituse raames saime teadmised digiturnudusest Youtubes. Rääkisime lähemalt, kuidas ennast reklaamida, kuidas teha seda kõige optimaalsemalt ning kuidas püüda klientide tähelepanu.
         </p>
         <Grid className={classes.shortDivider} />
-
+        <Grid style={{ display: "flex", justifyContent: "center" }}>
+          <img width="65%" src={libutigu} />
+        </Grid>
       </Grid>
     </Grid>
   )

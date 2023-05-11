@@ -63,14 +63,14 @@ export const useStyles = makeStyles<Theme>((theme) => ({
     alampealkiri: {
         alignSelf: "center",
         fontFamily:"'Roboto Mono', monospace",
-        fontSize:"1.125rem",
+        fontSize:"1.5rem",
         fontWeight: 700,
     },
     typoCenter: {
         alignSelf: "center",
         fontFamily:"'Roboto Mono', monospace",
-        fontSize:"1.40rem",
-        fontWeight: 700,
+        fontSize:"3rem",
+        fontWeight: 'bold',
         textAlign: "center",
     },
     image: {
@@ -140,9 +140,15 @@ export const useStyles = makeStyles<Theme>((theme) => ({
     },
     shortDivider: {
         width:"100%",
-        borderBottom:"2px solid #F391A1",
         marginTop: "25px",
-        marginBottom: "25px",
+        marginBottom: "45px",
+        borderBottom:"2px dashed #F391A1",
+    },
+    padding: {
+        width:"100%",
+        marginTop: "45px",
+        marginBottom: "45px",
+        borderBottom:"1px dotted #000",
     },
     shortDividerBlack: {
         width:"100%",
