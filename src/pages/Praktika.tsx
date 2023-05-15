@@ -3,6 +3,8 @@ import { Typography } from "@material-ui/core";
 import { Grid } from "@mui/material";
 import { useStyles } from "../styles";
 import libutigu from "../libutigu4.png";
+import libutigu1 from "../libutigu5.png";
+import CustomButton from '../CustomButton';
 
 const Praktika = () => {
   useEffect(() => {
@@ -30,6 +32,9 @@ const Praktika = () => {
         <p className={classes.sisutekst}>
           Minu spetsialiseerumispraktika toimus vahemikus 10.10.2022 - 21.04.2023 asutuses <a className={classes.link} target="blank" href="https://www.quretec.com/"> Quretec </a> Praktikakoha leidsin tänu tutvustele ja Tartu Rakendusliku Kolledži praktikakohtade nimekirjale.
         </p>
+        <CustomButton style={{ margin: 4 }}>
+        <a className={classes.cvLink} href="https://docs.google.com/document/d/1mHZiwzLgCEp9JgX9LsVn-8KGx3dEgv82/edit?usp=sharing&ouid=117508464084897999916&rtpof=true&sd=true" target="_blank">praktikaaruanne</a>
+      </CustomButton>
 
         <Grid className={classes.shortDivider} />
 
@@ -63,7 +68,6 @@ const Praktika = () => {
           •	parandada oma võtmeoskusi (suhtlemise, probleemilahenduse, ajaplaneerimise-, koostöö- ja õppimisoskusi)<br></br>
         </p>
 
-        <Grid className={classes.shortDivider} />
 
       </Grid>
 
@@ -95,8 +99,7 @@ const Praktika = () => {
         </p>
         <Grid className={classes.shortDivider} />
         <Grid style={{ display: "flex", justifyContent: "center" }}>
-          <img width="65%" src={libutigu} />
-
+          <img width="75%" src={libutigu} />
         </Grid>
       </Grid>
 
@@ -116,8 +119,11 @@ const Praktika = () => {
           Minu tutvumispraktika toimus vahemikus 04.04.2022 - 08.05.2022 asutuses <a className={classes.link} target="blank" href="https://www.juston.com/en/home_en/"> JustOn GmbH</a>. Neli nädalat viibisin Saksamaal ja ühe nädala viisin läbi kaugtööna.<br></br>
           Pakkumise sain Tartu Rakendusliku Kolledži rahvusvaheliste suhete koordinaatorilt, kes pakkus välispraktika võimalust. Praktikal oli kaks projekti, mille eesmärkideks olid settlement protsessi optimeerimine ja entry sobitamise informatsiooni kuvamine.
         </p>
+        <CustomButton style={{ margin: 4 }}>
+        <a className={classes.cvLink} href="https://docs.google.com/document/d/1hYxbVh0Ubhscvo426chuwkP9R0hWx-Mu/edit?usp=sharing&ouid=117508464084897999916&rtpof=true&sd=true" target="_blank">praktikaaruanne</a>
+      </CustomButton>
 
-        <Grid className={classes.shortDividerLeft} />
+        <Grid className={classes.shortDivider} />
 
         <Typography
           className={classes.typo}
@@ -144,7 +150,6 @@ const Praktika = () => {
           •	leida seoseid koolis õpitu ja töömaailma vahel<br></br>
           •	täiendada oma teadmisi ja praktilisi oskusi kasutajakogemuse disaini valdkonnas
         </p>
-        <Grid className={classes.shortDivider} />
 
       </Grid>
 
@@ -164,14 +169,6 @@ const Praktika = () => {
           Writes structured and optimized CSS and semantic HTML code using W3C standard and/or any other code standards that were agreed upon: was not part of the internship, instead creation of wire frames & prototypes with figma was done very good<br></br>
           Participates in web development teamwork projects: good, daily meeting and presentation of daily results in the team<br></br>
         </p>
-
-        <Grid className={classes.shortDivider} />
-
-        <Typography
-          className={classes.typo}
-        >
-          trainee development
-        </Typography>
         <p className={classes.sisutekst}>
           <span className={classes.boldInside}>responsibility</span> - self-reliant work<br></br>
           <span className={classes.boldInside}>independence</span> - independent work, own ideas<br></br>
@@ -180,7 +177,9 @@ const Praktika = () => {
           <span className={classes.boldInside}>adaptability</span> - often had to adapt to changed requirements that came up from the daily feedback meetings (multiple solution iterations)<br></br>
         </p>
 
-        <Grid className={classes.shortDivider} />
+        <Grid style={{ display: "flex", justifyContent: "center" }}>
+          <img width="55%" src={libutigu1} />
+        </Grid>
 
       </Grid>
     </Grid>

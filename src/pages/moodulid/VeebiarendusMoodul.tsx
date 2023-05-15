@@ -802,7 +802,7 @@ export const ArenguportfoolioEsitamine = () => {
     <>
       <p className={classes.sisutekst}>
         Arenguportfoolio loomise kursuse raames õpib õpilane oma erialast arengut analüüsima. Koostame elektroonilise arenguportfoolio põhja, mida iseseivalt hakkame õpingute jooksul täiendama.
-        Enesetuvustus arenguportfoolio jaoks. Sissejuhatus ainesse- rääkisime reeglitest, teemadest ja hindamisest. Vaatasime üle, mis on arenguportfoolio, millel see põhineb ning nägime näiteid mõningatest eelmiste aastate töödest. Tunni raames pidin Google Sites looma arenguportfoolio põhja ja tegema valmis portfoolio struktuuri koos enesetutvustusega. Õppisin käsitlema Google Sites'i, varasem kokkupuude puudus. Enestutvustus nähtav portfoolio avalehel. 2. Sisuhaldussüsteemide aine kokkuvõte Alustasin esimese aine kokkuvõtte kirjutamist Google Sites. Tõin välja sisuhaldussüsteemide aine jooksul omandataud teadmised, kirjeldused tehtud töödest ja kasutatud vahenditest. Kokkuvõtte tegemine andis mulle väga hea ülevaate ja selgema pildi kursusest.
+        Enesetuvustus arenguportfoolio jaoks. Sissejuhatus ainesse- rääkisime reeglitest, teemadest ja hindamisest. Vaatasime üle, mis on arenguportfoolio, millel see põhineb ning nägime näiteid mõningatest eelmiste aastate töödest. Tunni raames pidin Google Sites looma arenguportfoolio põhja ja tegema valmis portfoolio struktuuri koos enesetutvustusega. Õppisin käsitlema Google Sites'i, varasem kokkupuude puudus.
       </p>
     </>
   )
