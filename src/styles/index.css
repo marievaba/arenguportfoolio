@@ -15,9 +15,11 @@ body {
 .app-content {
   padding: 40px 100px;
 }
-
 .home-content {
   padding: 0 100px;
+}
+.moodulid-content {
+  padding: 40px 0px;
 }
 
 .home-content-bg-img {
@@ -94,9 +96,7 @@ li {
   padding-top: 100px;
 }
 
-.veebikujundus-title {
-  padding-top: 60px !important;
-}
+
 
 /* exceptional breakpoints */
 @media (max-width: 980px) {
@@ -116,13 +116,10 @@ li {
     padding-top: 0px;
   }
   .moodulid-content {
-    padding: 0 20px 0 20px !important;
+    padding: 0 100px !important;
   }
   .moodulid-menu {
     display: none;
-  }
-  .veebikujundus-title {
-    padding-top: 30px !important;
   }
   .home-content {
     padding: 40px 100px
@@ -133,11 +130,14 @@ li {
   .h1-header {
     padding: 20px 0 !important;
   }
+  .reklaam-img {
+    width: 100% !important;
+  }
 }
 /* MUI md BREAKPOINT END */
 
 /* font changes */
-@media (max-width: 630px) {
+@media (max-width: 690px) {
   .h2-header {
     font-size: 18px !important;
   }
@@ -152,17 +152,22 @@ li {
   .praktika-body .h1-header-praktika {
     font-size: 18px !important;
   }
-}
-/* font changes END */
 
-@media (max-width: 520px) {
+  .mummud-img {
+    width: 100% !important;
+  }
+
   .app-content {
     padding: 40px 20px
+  }
+  .moodulid-content {
+    padding: 20px 20px !important;
   }
   .home-content {
     padding: 40px 20px
   }
 }
+/* font changes END */
 
 /* MOBILE breakpoint */
 @media (max-width: 480px) {
@@ -193,12 +198,6 @@ li {
   }
   .nav-link-sub {
     font-size: 4vw !important;
-  }
-  .mummud-img {
-    width: 100% !important;
-  }
-  .reklaam-img {
-    width: 100% !important;
   }
   .veebikujundus-title {
     padding-top: 0px !important;
