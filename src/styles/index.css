@@ -136,9 +136,13 @@ body {
   .h2-header {
     font-size: 18px !important;
   }
+  div:has(> .h1-header) {
+    width: 100%;
+  }
   .h1-header {
-    text-align: center;
+    text-align: center !important;
     font-size: 23px !important;
+    padding-bottom: 20px !important;
   }
   .praktika-body .h1-header {
     font-size: 18px !important;
