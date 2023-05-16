@@ -79,13 +79,14 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         borderRadius:"130px",
     },
     sisutekst: {
-        fontFamily:'Roboto',
+        // oli enne default font
+        fontFamily: "'Roboto Mono', monospace",
         fontWeight: 400,
-        fontSize:"1rem",
+        fontSize: "1rem",
         lineHeight: "1.5",
     },
     button: {
-        fontFamily:"'Roboto Mono', monospace",
+        fontFamily: "'Roboto Mono', monospace",
         textTransform: "lowercase",
         borderRadius: "50px",
         border:" 2px solid #F17E92",
