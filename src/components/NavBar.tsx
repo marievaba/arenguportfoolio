@@ -116,7 +116,8 @@ export const NavBar = () => {
               borderRadius: 25,
               margin: "35px 0 35px 0",
               backgroundColor: "#F17E92",
-              overflow: "hidden"
+              overflow: "hidden",
+              padding: "0 10px"
             }
           }}
         >

@@ -21,7 +21,7 @@ const Enesetutvustus = () => {
       <Grid container md={5} className="img-container" alignItems="center" direction="column" style={{
       }}>
         <img className={classes.image} src={image} />
-        <Grid item style={{ paddingTop: 20 }}>
+        <Grid className="buttons-container" item style={{ paddingTop: 20 }}>
           <CustomButton style={{ margin: 4 }}>
             <a className={classes.cvLink} href="https://docs.google.com/document/d/1KZA6vrWZoDUC6Ljf9sStSW41s0_8Y0oUHMGqYg5O-DE/edit?usp=sharing" target="_blank">cv</a>
           </CustomButton>
