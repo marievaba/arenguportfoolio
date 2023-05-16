@@ -19,7 +19,7 @@ export const Animatsioonid = () => {
   const classes = useStyles();
   return (
     <>
-      <Typography className={classes.alampealkiri}>
+      <Typography className={`${classes.alampealkiri} h2-header`}>
         animatsioonid
       </Typography>
       <p className={classes.sisutekst}>
@@ -41,7 +41,7 @@ export const Bootstrap = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         bootstrap
       </Typography>
@@ -63,7 +63,7 @@ export const DisainiKavandamine = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         disaini kavandamine ja prototüüpimine
       </Typography>
@@ -86,7 +86,7 @@ export const HTMLjaCSS = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         HTML ja CSS
       </Typography>
@@ -111,7 +111,7 @@ export const VeebitehnoloogiadJaKujundusvahendid = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         veebitehnoloogiad ja kujundusvahendid
       </Typography>
@@ -134,7 +134,7 @@ export const VisandiLoomine = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         visandi loomine
       </Typography>
@@ -153,7 +153,7 @@ export const StruktuuriKavand = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         struktuurikavand
       </Typography>
@@ -176,7 +176,7 @@ export const TestimiseAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         testimise alused
       </Typography>
@@ -192,7 +192,7 @@ export const UIDisain = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         UI disain
       </Typography>
@@ -209,7 +209,7 @@ export const SissejuhatusTarkvaraarendusse = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         sissejuhatus tarkvaraarendusse
       </Typography>
@@ -228,7 +228,7 @@ export const SisuhaldusSüsteemid = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         sisuhaldusüsteemid
       </Typography>
@@ -251,7 +251,7 @@ export const Versioonihaldus = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         versioonihaldus
       </Typography>
@@ -271,7 +271,7 @@ export const Veebihaldus = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         veebihaldus
       </Typography>
@@ -290,7 +290,7 @@ export const VahenditeKasutaminePrototüüpimiseks = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         vahendite kasutamine prototüüpimiseks, arendusraamistikud
       </Typography>
@@ -313,7 +313,7 @@ export const ITÕigus = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         IT Õigus
       </Typography>
@@ -333,7 +333,7 @@ export const GoogleAnalyticsKasutamine = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         google analyticsi kasutamine
       </Typography>
@@ -352,7 +352,7 @@ export const IntervjuuKoostamine = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         intervjuu koostamine
       </Typography>
@@ -371,7 +371,7 @@ export const KasutajakogemuseAnalüüsiAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         kasutajakogemuse analüüsi alused
       </Typography>
@@ -387,7 +387,7 @@ export const ABTestimine = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         A/B testimine
       </Typography>
@@ -408,7 +408,7 @@ export const ReklaamiPsühholoogia = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         reklaamipsühholoogia
       </Typography>
@@ -425,7 +425,7 @@ export const SuhtlemiseAlused2 = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         suhtlemise alused 2
       </Typography>
@@ -444,7 +444,7 @@ export const SuhtlemisePsühholoogilineAnalüüs = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         suhtlemise psühholoogiline analüüs
       </Typography>
@@ -463,7 +463,7 @@ export const ArvutivõrkudeAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         arvutivõrkude alused
       </Typography>
@@ -485,7 +485,7 @@ export const InfoturbeAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         infoturbe alused
       </Typography>
@@ -502,7 +502,7 @@ export const ITSüsteemideRiistvara = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         IT süsteemide riistvara
       </Typography>
@@ -518,7 +518,7 @@ export const Operatsioonisüsteemid = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         operatsioonisüsteemid
       </Typography>
@@ -535,7 +535,7 @@ export const ErialaneMatemaatika = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         erialane matemaatika
       </Typography>
@@ -554,7 +554,7 @@ export const ObjektorienteeritudProgrammeerimine = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         objektorienteeritud programmeerimine
       </Typography>
@@ -583,7 +583,7 @@ export const ProgrammeerimiseAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         programmeerimise alused
       </Typography>
@@ -603,7 +603,7 @@ export const ITKorraldus = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         IT korraldus
       </Typography>
@@ -625,7 +625,7 @@ export const MeeskonnatööAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         meeskonnatöö alused
       </Typography>
@@ -647,7 +647,7 @@ export const ProjektihalduseAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         projektihalduse alused
       </Typography>
@@ -666,7 +666,7 @@ export const GraafilineDisainJaMultimeedia = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         graafiline disain & multimeedia toode disain ja tootearendus
       </Typography>
@@ -685,7 +685,7 @@ export const AsjaajamiseAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         asjaajamise alused
       </Typography>
@@ -704,7 +704,7 @@ export const EttevõtluseAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         ettevõtluse alused & majanduse alused
       </Typography>
@@ -723,7 +723,7 @@ export const KarjääriplaneerimiseAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         karjääriplaneerimise alused
       </Typography>
@@ -742,7 +742,7 @@ export const SuhtlemisÕpetus = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         suhtlemisõpetus
       </Typography>
@@ -761,7 +761,7 @@ export const Töökeskkonnaohutus = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         töökeskkonnaohutus
       </Typography>
@@ -780,7 +780,7 @@ export const TöötamiseÕiguslikudAlused = () => {
   return (
     <>
       <Typography
-        className={classes.alampealkiri}
+        className={`${classes.alampealkiri} h2-header`}
       >
         töötamise õiguslikud alused
       </Typography>

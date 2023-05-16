@@ -133,10 +133,11 @@ body {
 
 /* font changes */
 @media (max-width: 630px) {
-  .makeStyles-alampealkiri-3 {
+  .h2-header {
     font-size: 18px !important;
   }
   .h1-header {
+    text-align: center;
     font-size: 23px !important;
   }
   .praktika-body .h1-header {
