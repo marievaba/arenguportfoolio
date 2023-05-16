@@ -117,7 +117,8 @@ export const NavBar = () => {
               margin: "35px 0 35px 0",
               backgroundColor: "#F17E92",
               overflow: "hidden",
-              padding: "0 10px"
+              padding: "0 10px",
+              zIndex: 2,
             }
           }}
         >
