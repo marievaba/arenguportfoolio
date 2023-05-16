@@ -25,7 +25,7 @@ const Praktika = () => {
         md={6}
       >
         <Typography
-          className={classes.typo}
+          className={`${classes.typo} h1-header`}
         >
           spetsialiseerumispraktika
         </Typography>
@@ -39,7 +39,7 @@ const Praktika = () => {
         <Grid className={classes.shortDivider} />
 
         <Typography
-          className={classes.typo}
+          className={`${classes.typo} h1-header`}
         >
           minu praktika eesmärgid
         </Typography>
@@ -56,7 +56,7 @@ const Praktika = () => {
         <Grid className={classes.shortDivider} />
 
         <Typography
-          className={classes.typo}
+          className={`${classes.typo} h1-header`}
         >
           juhendi järgsed eesmärgid
         </Typography>
@@ -76,7 +76,7 @@ const Praktika = () => {
         md={6}
       >
         <Typography
-          className={classes.typo}
+          className={`${classes.typo} h1-header`}
         >
           juhendaja hinnang
         </Typography>
@@ -111,7 +111,7 @@ const Praktika = () => {
         md={6}
       >
         <Typography
-          className={classes.typo}
+          className={`${classes.typo} h1-header`}
         >
           tutvumispraktika
         </Typography>
@@ -126,7 +126,7 @@ const Praktika = () => {
         <Grid className={classes.shortDivider} />
 
         <Typography
-          className={classes.typo}
+          className={`${classes.typo} h1-header`}
         >
           minu praktika eesmärgid
         </Typography>
@@ -140,7 +140,7 @@ const Praktika = () => {
         <Grid className={classes.shortDivider} />
 
         <Typography
-          className={classes.typo}
+          className={`${classes.typo} h1-header`}
         >
           juhendi järgsed eesmärgid
         </Typography>
@@ -158,7 +158,7 @@ const Praktika = () => {
         md={6}
       >
         <Typography
-          className={classes.typo}
+          className={`${classes.typo} h1-header`}
         >
           juhendaja hinnang
         </Typography>

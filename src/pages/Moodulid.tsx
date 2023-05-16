@@ -113,7 +113,7 @@ const Moodulid = () => {
         className="moodulid-content"
       >
         <Grid className="veebikujundus-title" item md={12}>
-          <Typography className={classes.typoCenter}>
+          <Typography className={`${classes.typoCenter} h1-header`}>
             veebikujundus
           </Typography>
         </Grid>
@@ -143,7 +143,7 @@ const Moodulid = () => {
 
         <Grid item md={12} ref={veebiarendusRef}>
           <Grid className={classes.shortDividerBlack} />
-          <Typography className={classes.typoCenter}>
+          <Typography className={`${classes.typoCenter} h1-header`}>
             veebiarendus ja veebihaldus
           </Typography>
         </Grid>
@@ -164,7 +164,7 @@ const Moodulid = () => {
 
         <Grid item md={12} ref={kasutajakogemusRef}>
           <Grid className={classes.shortDividerBlack} />
-          <Typography className={classes.typoCenter}>
+          <Typography className={`${classes.typoCenter} h1-header`}>
             kasutajakogemuse analüüs
           </Typography>
         </Grid>
@@ -181,7 +181,7 @@ const Moodulid = () => {
 
         <Grid item md={12} ref={psühholoogiaRef}>
           <Grid className={classes.shortDividerBlack} />
-          <Typography className={classes.typoCenter}>
+          <Typography className={`${classes.typoCenter} h1-header`}>
             psühholoogia ja suhtlemine
           </Typography>
         </Grid>
@@ -196,7 +196,7 @@ const Moodulid = () => {
 
         <Grid item md={12} ref={riistvaraRef}>
           <Grid className={classes.shortDividerBlack} />
-          <Typography className={classes.typoCenter}>
+          <Typography className={`${classes.typoCenter} h1-header`}>
             arvutite riistvara ja võrgud
           </Typography>
         </Grid>
@@ -213,7 +213,7 @@ const Moodulid = () => {
 
         <Grid item md={12} ref={programmeerimiseRef}>
           <Grid className={classes.shortDividerBlack} />
-          <Typography className={classes.typoCenter}>
+          <Typography className={`${classes.typoCenter} h1-header`}>
             programmeerimise alused
           </Typography>
         </Grid>
@@ -228,7 +228,7 @@ const Moodulid = () => {
 
         <Grid item md={12} ref={projektijuhtimiseRef}>
           <Grid className={classes.shortDividerBlack} />
-          <Typography className={classes.typoCenter}>
+          <Typography className={`${classes.typoCenter} h1-header`}>
             projektijuhtimise alused
           </Typography>
         </Grid>
@@ -243,7 +243,7 @@ const Moodulid = () => {
 
         <Grid item md={12} ref={ainedRef}>
           <Grid className={classes.shortDividerBlack} />
-          <Typography className={classes.typoCenter}>
+          <Typography className={`${classes.typoCenter} h1-header`}>
             varasemalt läbitud ained
           </Typography>
         </Grid>
@@ -256,7 +256,7 @@ const Moodulid = () => {
 
         <Grid item md={12} ref={karjääriplaneerimineRef}>
           <Grid className={classes.shortDividerBlack} />
-          <Typography className={classes.typoCenter}>
+          <Typography className={`${classes.typoCenter} h1-header`}>
             karjääriplaneerimine ja ettevõtlus
           </Typography>
         </Grid>
@@ -277,7 +277,7 @@ const Moodulid = () => {
 
         <Grid item md={12} ref={arenguportfoolioRef}>
           <Grid className={classes.shortDividerBlack} />
-          <Typography className={classes.typoCenter}>
+          <Typography className={`${classes.typoCenter} h1-header`}>
             arenguportfoolio loomine ja esitamine
           </Typography>
         </Grid>
