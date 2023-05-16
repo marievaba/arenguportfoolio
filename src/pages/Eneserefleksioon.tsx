@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Typography } from "@material-ui/core";
-import { Grid, useMediaQuery } from "@mui/material";
+import { Grid } from "@mui/material";
 import { useStyles } from "../styles";
-import libutigu from "../libutigu7.png";
-import libutigu2 from "../libutigu5.png";
+import libutigu from "../images/libutigu7.png";
+import libutigu2 from "../images/libutigu5.png";
 
 const Eneserefleksioon = () => {
   useEffect(() => {

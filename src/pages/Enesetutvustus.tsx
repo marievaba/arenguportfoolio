@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Grid } from '@mui/material';
 import { Typography } from "@material-ui/core";
-import image from "../pilt.jpg";
-import CustomButton from "../CustomButton";
+import image from "../images/pilt.jpg";
+import CustomButton from "../components/CustomButton";
 import { useStyles } from "../styles";
-import libutigu from "../libutigu0.png";
+import libutigu from "../images/libutigu0.png";
 
 const Enesetutvustus = () => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const Enesetutvustus = () => {
   const classes = useStyles();
   return (
     <Grid
-      className="app-content"
+      className="home-content"
       container
       md={12}
     >
@@ -37,11 +37,12 @@ const Enesetutvustus = () => {
 
       <Grid
         md={7}
+        item
         direction="column"
         justifyContent="center"
         sx={{ paddingTop: { xs: "20px", md: "60px" } }}
       >
-        <Grid className="blob" style={{
+        <Grid className="libutigu-bg-img" style={{
           position: "absolute",
           left: 350,
           top: 20,

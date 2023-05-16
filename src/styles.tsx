@@ -89,13 +89,13 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         textTransform: "lowercase",
         borderRadius: "50px",
         border:" 2px solid #F17E92",
-        background: " #dedede",
+        background: " #ebebeb",
         textDecoration: "none",
         /* boxShadow: "20px 20px 60px #bebebe, -20px -20px 60px #ffffff", */
         boxShadow:"none",
         '&:hover': {
             boxShadow:"none",
-            backgroundColor: "#F391A1",
+            backgroundColor: "#F17E92",
             color: "#fff",
             '& .MuiButton-label': {
                 '& a': {
@@ -111,7 +111,7 @@ export const useStyles = makeStyles<Theme>((theme) => ({
     link: {
         underline:"none",
         textDecoration:"none",
-        color: "#F391A1",
+        color: "#F17E92",
         fontWeight: 700,
         '&:hover': {
             textDecoration: "underline",
@@ -142,7 +142,7 @@ export const useStyles = makeStyles<Theme>((theme) => ({
         width:"100%",
         marginTop: "25px",
         marginBottom: "45px",
-        borderBottom:"2px dashed #F391A1",
+        borderBottom:"2px dashed #F17E92",
     },
     padding: {
         width:"100%",
@@ -158,7 +158,7 @@ export const useStyles = makeStyles<Theme>((theme) => ({
     },
     shortDividerLeft: {
         width:"100%",
-        borderBottom:"2px solid #F391A1",
+        borderBottom:"2px solid #F17E92",
         marginTop: "25px",
         marginBottom: "25px",
     },

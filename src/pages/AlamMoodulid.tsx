@@ -1,21 +1,19 @@
 import React from 'react';
 import { Typography } from "@material-ui/core";
 import { Grid } from "@mui/material";
-import { useStyles } from "../../styles";
-import visand from "../../visand.jpg";
-import libutigu0 from "../../libutigu0.png";
-import libutigu1 from "../../libutigu1.png";
-import libutigu2 from "../../libutigu2.png";
-import libutigu3 from "../../libutigu3.png";
-import libutigu4 from "../../libutigu4.png";
-import libutigu5 from "../../libutigu5.png";
-import libutigu6 from "../../libutigu6.png";
-import libutigu7 from "../../libutigu7.png";
-import mummud from "../../mummmud.jpg";
-import reklaam from "../../reklaam.jpg";
+import { useStyles } from "../styles";
+import visand from "../images/visand.jpg";
+import libutigu0 from "../images/libutigu0.png";
+import libutigu3 from "../images/libutigu3.png";
+import libutigu4 from "../images/libutigu4.png";
+import libutigu5 from "../images/libutigu5.png";
+import libutigu6 from "../images/libutigu6.png";
+import libutigu7 from "../images/libutigu7.png";
+import mummud from "../images/mummmud.jpg";
+import reklaam from "../images/reklaam.jpg";
 // @ts-ignore
-import video from "../../putukad.mp4";
-import CustomButton from '../../CustomButton';
+import video from "../images/putukad.mp4";
+import CustomButton from '../components/CustomButton';
 
 export const Animatsioonid = () => {
   const classes = useStyles();
@@ -201,7 +199,7 @@ export const UIDisain = () => {
       <p className={classes.sisutekst}>
         Kursuse raames omandatakse teadmised visualiseerimise, kompositsiooni ja stiliseerimise kohta.  Ülesande teostamisel kasutame Adobe Illustarorit. Illustaratsioon raamatule.
       </p>
-      <img width="75%" src={mummud} />
+      <img className="mummud-img" width="75%" src={mummud} />
     </>
   )
 }
@@ -417,7 +415,7 @@ export const ReklaamiPsühholoogia = () => {
       <p className={classes.sisutekst}>
         Reklaami mõju ja roll. Mõjustamispsühholoogia võtted reklaamis. Reklaami tajumine: Tähelepanu ja mäluprotsessid. Veebis reklaamide analüüs ja hindamine. veebi mõjutusvahendite Kuidas võiks teha reklaami?: Tarbijakäitumine. Reklaamistrateegiad. Veebis reklaamikampaania kavandamine. Reklaamitegevuse õiguslik ja eetiline regulatsioon Reklaami analüüs, pidime valima ühe reklaami ja koostama selle kohta analüüsi.  Saadud teadmiste põhjal pidime ise looma reklaami.
       </p>
-      <img width="90%" src={reklaam} />
+      <img className="reklaam-img" width="90%" src={reklaam} />
     </>
   )
 }

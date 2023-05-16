@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Typography } from "@material-ui/core";
 import { Grid } from "@mui/material";
 import { useStyles } from "../styles";
-import libutigu from "../libutigu6.png";
+import libutigu from "../images/libutigu6.png";
 
 const Koolitused = () => {
   useEffect(() => {

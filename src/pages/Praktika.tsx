@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Typography } from "@material-ui/core";
 import { Grid } from "@mui/material";
 import { useStyles } from "../styles";
-import libutigu from "../libutigu4.png";
-import libutigu1 from "../libutigu5.png";
-import CustomButton from '../CustomButton';
+import libutigu from "../images/libutigu4.png";
+import libutigu1 from "../images/libutigu5.png";
+import CustomButton from '../components/CustomButton';
 
 const Praktika = () => {
   useEffect(() => {
@@ -14,7 +14,7 @@ const Praktika = () => {
   const classes = useStyles();
   return (
     <Grid
-      className="app-content"
+      className="app-content praktika-body"
       container
       md={12}
       spacing={4}

@@ -1,23 +1,13 @@
 import React, { useEffect } from 'react';
 import { Grid } from "@mui/material";
 import { Typography } from "@material-ui/core";
-import CustomButton from "../CustomButton";
+import CustomButton from "../components/CustomButton";
 import { useStyles } from "../styles";
+import { useLocation } from 'react-router-dom';
 import { useRef } from "react";
-import visand from "../visand.jpg";
-import mummud from "../mummmud.jpg";
-import reklaam from "../reklaam.jpg";
-// @ts-ignore
-import video from "../comp1.mp4";
-// @ts-ignore
-import video1 from "../putukad.mp4";
-import { ABTestimine, Animatsioonid, ArenguportfoolioEsitamine, ArvutivõrkudeAlused, AsjaajamiseAlused, Bootstrap, DisainiKavandamine, ErialaneMatemaatika, EttevõtluseAlused, GoogleAnalyticsKasutamine, GraafilineDisainJaMultimeedia, HTMLjaCSS, ITKorraldus, ITSüsteemideRiistvara, ITÕigus, InfoturbeAlused, IntervjuuKoostamine, KarjääriplaneerimiseAlused, KasutajakogemuseAnalüüsiAlused, MeeskonnatööAlused, ObjektorienteeritudProgrammeerimine, Operatsioonisüsteemid, ProgrammeerimiseAlused, ProjektihalduseAlused, ReklaamiPsühholoogia, SissejuhatusTarkvaraarendusse, SisuhaldusSüsteemid, StruktuuriKavand, SuhtlemiseAlused2, SuhtlemisePsühholoogilineAnalüüs, SuhtlemisÕpetus, TestimiseAlused, Töökeskkonnaohutus, TöötamiseÕiguslikudAlused, UIDisain, VahenditeKasutaminePrototüüpimiseks, Veebihaldus, VeebitehnoloogiadJaKujundusvahendid, Versioonihaldus, VisandiLoomine } from './moodulid/VeebiarendusMoodul';
+import { ABTestimine, Animatsioonid, ArenguportfoolioEsitamine, ArvutivõrkudeAlused, AsjaajamiseAlused, Bootstrap, DisainiKavandamine, ErialaneMatemaatika, EttevõtluseAlused, GoogleAnalyticsKasutamine, GraafilineDisainJaMultimeedia, HTMLjaCSS, ITKorraldus, ITSüsteemideRiistvara, ITÕigus, InfoturbeAlused, IntervjuuKoostamine, KarjääriplaneerimiseAlused, KasutajakogemuseAnalüüsiAlused, MeeskonnatööAlused, ObjektorienteeritudProgrammeerimine, Operatsioonisüsteemid, ProgrammeerimiseAlused, ProjektihalduseAlused, ReklaamiPsühholoogia, SissejuhatusTarkvaraarendusse, SisuhaldusSüsteemid, StruktuuriKavand, SuhtlemiseAlused2, SuhtlemisePsühholoogilineAnalüüs, SuhtlemisÕpetus, TestimiseAlused, Töökeskkonnaohutus, TöötamiseÕiguslikudAlused, UIDisain, VahenditeKasutaminePrototüüpimiseks, Veebihaldus, VeebitehnoloogiadJaKujundusvahendid, Versioonihaldus, VisandiLoomine } from './AlamMoodulid';
 
-function Moodulid() {
-  useEffect(() => {
-    window.scrollTo({ top: 0 })
-  });
-
+const Moodulid = () => {
   const classes = useStyles();
   const veebiarendusRef = useRef(null);
   const kasutajakogemusRef = useRef(null);
@@ -35,9 +25,54 @@ function Moodulid() {
       behavior: "smooth"
     })
   }
+
+  const location = useLocation();
+  useEffect(() => {
+    const url = decodeURI(window.location.href.replace(window.location.origin, ""));  
+    switch (url) {
+      case "/moodulid#veebikujundus": {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        break;
+      }
+      case "/moodulid#veebiarendus-ja-veebihaldus": {
+        handleScroll(veebiarendusRef);
+        break;
+      }
+      case "/moodulid#kasutajakogemuse-analüüs": {
+        handleScroll(kasutajakogemusRef);
+        break;
+      }
+      case "/moodulid#arvutite-riistvara-ja-võrgud": {
+        handleScroll(riistvaraRef)
+        break;
+      }
+      case "/moodulid#programmeerimise-alused": {
+        handleScroll(programmeerimiseRef)
+        break;
+      }
+      case "/moodulid#projektijuhtimise-alused": {
+        handleScroll(projektijuhtimiseRef)
+        break;
+      }
+      case "/moodulid#varasemalt-läbitud-ained": {
+        handleScroll(ainedRef)
+        break;
+      }
+      case "/moodulid#karjääriplaneerimine-ja-ettevõtlus": {
+        handleScroll(karjääriplaneerimineRef)
+        break;
+      }
+      case "/moodulid#arenguportfoolio-loomine-ja-tesitamine": {
+        handleScroll(arenguportfoolioRef)
+        break;
+      }
+      default: window.scrollTo({ top: 0 });
+    }
+}, [location]);
+
   return (
     <>
-      <Grid style={{ position: "fixed", top: 90, left: 0, width: 250, padding: "20px 0 0 40px" }}>
+      <Grid className="moodulid-menu" style={{ position: "fixed", top: 90, left: 0, width: 250, padding: "20px 0 0 40px" }}>
         <CustomButton fullWidth={true} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           Veebikujundus
         </CustomButton>
@@ -69,13 +104,15 @@ function Moodulid() {
           Arenguportfoolio loomine ja esitamine
         </CustomButton>
       </Grid>
+      
       <Grid
         container
         md={12}
-        spacing={4}
+        spacing={{ xs: 0, md: 4 }}
         style={{ paddingLeft: 300 }}
+        className="moodulid-content"
       >
-        <Grid item md={12} style={{ paddingTop: 60 }}>
+        <Grid className="veebikujundus-title" item md={12}>
           <Typography className={classes.typoCenter}>
             veebikujundus
           </Typography>
@@ -104,7 +141,7 @@ function Moodulid() {
 
         </Grid>
 
-        <Grid item md={12}>
+        <Grid item md={12} ref={veebiarendusRef}>
           <Grid className={classes.shortDividerBlack} />
           <Typography className={classes.typoCenter}>
             veebiarendus ja veebihaldus
@@ -116,7 +153,6 @@ function Moodulid() {
           <Versioonihaldus />
           <Grid className={classes.padding} />
           <VahenditeKasutaminePrototüüpimiseks />
-
         </Grid>
         <Grid item md={6}>
           <SisuhaldusSüsteemid />
@@ -126,7 +162,7 @@ function Moodulid() {
           <Veebihaldus />
         </Grid>
 
-        <Grid item md={12}>
+        <Grid item md={12} ref={kasutajakogemusRef}>
           <Grid className={classes.shortDividerBlack} />
           <Typography className={classes.typoCenter}>
             kasutajakogemuse analüüs
@@ -136,16 +172,14 @@ function Moodulid() {
           <GoogleAnalyticsKasutamine />
           <Grid className={classes.padding} />
           <KasutajakogemuseAnalüüsiAlused />
-
         </Grid>
-
         <Grid item md={6}>
           <IntervjuuKoostamine />
           <Grid className={classes.padding} />
           <ABTestimine />
         </Grid>
 
-        <Grid item md={12}>
+        <Grid item md={12} ref={psühholoogiaRef}>
           <Grid className={classes.shortDividerBlack} />
           <Typography className={classes.typoCenter}>
             psühholoogia ja suhtlemine
@@ -160,7 +194,7 @@ function Moodulid() {
           <ReklaamiPsühholoogia />
         </Grid>
 
-        <Grid item md={12}>
+        <Grid item md={12} ref={riistvaraRef}>
           <Grid className={classes.shortDividerBlack} />
           <Typography className={classes.typoCenter}>
             arvutite riistvara ja võrgud
@@ -170,16 +204,14 @@ function Moodulid() {
           <Operatsioonisüsteemid />
           <Grid className={classes.padding} />
           <ITSüsteemideRiistvara />
-
         </Grid>
         <Grid item md={6}>
           <InfoturbeAlused />
           <Grid className={classes.padding} />
-
           <ArvutivõrkudeAlused />
         </Grid>
 
-        <Grid item md={12}>
+        <Grid item md={12} ref={programmeerimiseRef}>
           <Grid className={classes.shortDividerBlack} />
           <Typography className={classes.typoCenter}>
             programmeerimise alused
@@ -194,7 +226,7 @@ function Moodulid() {
           <ObjektorienteeritudProgrammeerimine />
         </Grid>
 
-        <Grid item md={12}>
+        <Grid item md={12} ref={projektijuhtimiseRef}>
           <Grid className={classes.shortDividerBlack} />
           <Typography className={classes.typoCenter}>
             projektijuhtimise alused
@@ -209,7 +241,7 @@ function Moodulid() {
           <MeeskonnatööAlused />
         </Grid>
 
-        <Grid item md={12}>
+        <Grid item md={12} ref={ainedRef}>
           <Grid className={classes.shortDividerBlack} />
           <Typography className={classes.typoCenter}>
             varasemalt läbitud ained
@@ -222,7 +254,7 @@ function Moodulid() {
 
         </Grid> */}
 
-        <Grid item md={12}>
+        <Grid item md={12} ref={karjääriplaneerimineRef}>
           <Grid className={classes.shortDividerBlack} />
           <Typography className={classes.typoCenter}>
             karjääriplaneerimine ja ettevõtlus
@@ -234,7 +266,6 @@ function Moodulid() {
           <KarjääriplaneerimiseAlused />
           <Grid className={classes.padding} />
           <Töökeskkonnaohutus />
-
         </Grid>
         <Grid item md={6}>
           <EttevõtluseAlused />
@@ -244,7 +275,7 @@ function Moodulid() {
           <TöötamiseÕiguslikudAlused />
         </Grid>
 
-        <Grid item md={12}>
+        <Grid item md={12} ref={arenguportfoolioRef}>
           <Grid className={classes.shortDividerBlack} />
           <Typography className={classes.typoCenter}>
             arenguportfoolio loomine ja esitamine
