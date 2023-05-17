@@ -188,8 +188,8 @@ export const useStyles = makeStyles<Theme>((theme) => ({
             display: "block"
         },
         '&:hover': {
-            minWidth:"100%",
-            width: "inherit",
+            minWidth: "100%",
+            width: "initial",
             "& .MuiButton-label": {
                 color: "#fff",
                 textOverflow: "visible",

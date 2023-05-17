@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Grid } from "@mui/material";
 import { Typography } from "@material-ui/core";
-import CustomButton from "../components/CustomButton";
 import { useStyles } from "../styles";
 import { useLocation } from 'react-router-dom';
 import { useRef } from "react";
 import { ABTestimine, Animatsioonid, ArenguportfoolioEsitamine, ArvutivõrkudeAlused, AsjaajamiseAlused, Bootstrap, DisainiKavandamine, ErialaneMatemaatika, EttevõtluseAlused, GoogleAnalyticsKasutamine, GraafilineDisainJaMultimeedia, HTMLjaCSS, ITKorraldus, ITSüsteemideRiistvara, ITÕigus, InfoturbeAlused, IntervjuuKoostamine, KarjääriplaneerimiseAlused, KasutajakogemuseAnalüüsiAlused, MeeskonnatööAlused, ObjektorienteeritudProgrammeerimine, Operatsioonisüsteemid, ProgrammeerimiseAlused, ProjektihalduseAlused, ReklaamiPsühholoogia, SissejuhatusTarkvaraarendusse, SisuhaldusSüsteemid, StruktuuriKavand, SuhtlemiseAlused2, SuhtlemisePsühholoogilineAnalüüs, SuhtlemisÕpetus, TestimiseAlused, Töökeskkonnaohutus, TöötamiseÕiguslikudAlused, UIDisain, VahenditeKasutaminePrototüüpimiseks, Veebihaldus, VeebitehnoloogiadJaKujundusvahendid, Versioonihaldus, VisandiLoomine } from './AlamMoodulid';
+import { SideBar } from '../components/SideBar';
 
 const Moodulid = () => {
   const classes = useStyles();
@@ -62,7 +62,7 @@ const Moodulid = () => {
         handleScroll(karjääriplaneerimineRef)
         break;
       }
-      case "/moodulid#arenguportfoolio-loomine-ja-tesitamine": {
+      case "/moodulid#arenguportfoolio-loomine-ja-esitamine": {
         handleScroll(arenguportfoolioRef)
         break;
       }
@@ -72,39 +72,7 @@ const Moodulid = () => {
 
   return (
     <>
-      <Grid className="moodulid-menu" style={{ position: "fixed", top: 90, left: 0, width: 250, padding: "20px 0 0 40px" }}>
-        <CustomButton fullWidth={true} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          Veebikujundus
-        </CustomButton>
-        <CustomButton fullWidth={true} onClick={() => handleScroll(veebiarendusRef)}>
-          Veebiarendus ja veebihaldus
-        </CustomButton>
-        <CustomButton fullWidth={true} onClick={() => handleScroll(kasutajakogemusRef)}>
-          Kasutajakogemuse analüüs
-        </CustomButton>
-        <CustomButton fullWidth={true} onClick={() => handleScroll(psühholoogiaRef)}>
-          Psühholoogia ja suhtlemine
-        </CustomButton>
-        <CustomButton fullWidth={true} onClick={() => handleScroll(riistvaraRef)}>
-          Arvutite riistvara ja võrgud
-        </CustomButton>
-        <CustomButton fullWidth={true} onClick={() => handleScroll(programmeerimiseRef)}>
-          Programmeerimise alused
-        </CustomButton>
-        <CustomButton fullWidth={true} onClick={() => handleScroll(projektijuhtimiseRef)}>
-          Projektijuhtimise alused
-        </CustomButton>
-        <CustomButton fullWidth={true} onClick={() => handleScroll(ainedRef)}>
-          varasemalt läbitud ained
-        </CustomButton>
-        <CustomButton fullWidth={true} onClick={() => handleScroll(karjääriplaneerimineRef)}>
-          Karjääriplaneerimine ja ettevõtlus
-        </CustomButton>
-        <CustomButton fullWidth={true} onClick={() => handleScroll(arenguportfoolioRef)}>
-          Arenguportfoolio loomine ja esitamine
-        </CustomButton>
-      </Grid>
-      
+      <SideBar/>
       <Grid
         container
         md={12}
@@ -128,6 +96,7 @@ const Moodulid = () => {
           <UIDisain />
         </Grid>
         <Grid item md={6}>
+        <Grid className="mobile-divider" />
           <VeebitehnoloogiadJaKujundusvahendid />
 
           <Grid className={classes.padding} />
@@ -155,6 +124,7 @@ const Moodulid = () => {
           <VahenditeKasutaminePrototüüpimiseks />
         </Grid>
         <Grid item md={6}>
+        <Grid className="mobile-divider" />
           <SisuhaldusSüsteemid />
           <Grid className={classes.padding} />
           <ITÕigus />
@@ -174,6 +144,7 @@ const Moodulid = () => {
           <KasutajakogemuseAnalüüsiAlused />
         </Grid>
         <Grid item md={6}>
+        <Grid className="mobile-divider" />
           <IntervjuuKoostamine />
           <Grid className={classes.padding} />
           <ABTestimine />
@@ -191,6 +162,7 @@ const Moodulid = () => {
           <SuhtlemisePsühholoogilineAnalüüs />
         </Grid>
         <Grid item md={6}>
+        <Grid className="mobile-divider" />
           <ReklaamiPsühholoogia />
         </Grid>
 
@@ -206,6 +178,7 @@ const Moodulid = () => {
           <ITSüsteemideRiistvara />
         </Grid>
         <Grid item md={6}>
+        <Grid className="mobile-divider" />
           <InfoturbeAlused />
           <Grid className={classes.padding} />
           <ArvutivõrkudeAlused />
@@ -223,6 +196,7 @@ const Moodulid = () => {
           <ProgrammeerimiseAlused />
         </Grid>
         <Grid item md={6}>
+        <Grid className="mobile-divider" />
           <ObjektorienteeritudProgrammeerimine />
         </Grid>
 
@@ -238,6 +212,7 @@ const Moodulid = () => {
           <ProjektihalduseAlused />
         </Grid>
         <Grid item md={6}>
+        <Grid className="mobile-divider" />
           <MeeskonnatööAlused />
         </Grid>
 
@@ -268,6 +243,7 @@ const Moodulid = () => {
           <Töökeskkonnaohutus />
         </Grid>
         <Grid item md={6}>
+        <Grid className="mobile-divider" />
           <EttevõtluseAlused />
           <Grid className={classes.padding} />
           <SuhtlemisÕpetus />
@@ -281,9 +257,8 @@ const Moodulid = () => {
             arenguportfoolio loomine ja esitamine
           </Typography>
         </Grid>
-        <Grid item md={12}>
+        <Grid style={{paddingBottom: 60}} item md={12}>
           <ArenguportfoolioEsitamine />
-          <Grid className={classes.padding} />
         </Grid>
         {/* <Grid item md={6}>
 

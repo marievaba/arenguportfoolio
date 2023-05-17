@@ -67,8 +67,7 @@ const Praktika = () => {
           •	täiendada oma teadmisi ja praktilisi oskusi kasutajakogemuse disaini valdkonnas<br></br>
           •	parandada oma võtmeoskusi (suhtlemise, probleemilahenduse, ajaplaneerimise-, koostöö- ja õppimisoskusi)<br></br>
         </p>
-
-
+        <Grid className="short-divider "/>
       </Grid>
 
       <Grid
@@ -103,7 +102,9 @@ const Praktika = () => {
         </Grid>
       </Grid>
 
-      <Grid className={classes.divider} />
+      <Grid className="desktop-only" item md={12}>
+        <Grid className={classes.shortDividerBlack} />
+      </Grid>
 
       {/* TUTVUMISPRAKTIKA */}
       <Grid
@@ -150,7 +151,7 @@ const Praktika = () => {
           •	leida seoseid koolis õpitu ja töömaailma vahel<br></br>
           •	täiendada oma teadmisi ja praktilisi oskusi kasutajakogemuse disaini valdkonnas
         </p>
-
+        <Grid className="short-divider "/>
       </Grid>
 
       <Grid

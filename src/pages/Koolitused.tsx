@@ -67,7 +67,7 @@ const Koolitused = () => {
         <p className={classes.sisutekst}>
           09.03.2022 Osalesin õppekäigul ettevõttesse Navinmedia. Õppekäiku viis läbi ettevõtte asutaja ja tegevjuht Keirin Rebane. Rääkis lähemalt, kuidas nende ettevõtte toimib, millised on nende eeldused UX disainerile, kes üldse on UX disainer ning milliste erinevate klienditüüpidega on ta kokku puutunud. Õppekäik oli väga tore ja informatiivne.
         </p>
-
+        <Grid className="short-divider "/>
 
       </Grid>
 
@@ -81,6 +81,7 @@ const Koolitused = () => {
           <img width="25%" src={libutigu} />
           <img width="25%" src={libutigu} />
         </Grid>
+        <Grid className="short-divider "/>
 
         <Typography
           className={classes.typo}

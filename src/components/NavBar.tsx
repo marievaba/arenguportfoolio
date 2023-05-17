@@ -6,12 +6,17 @@ import CustomButton from "./CustomButton"
 import { useStyles } from '../styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { useLocation } from 'react-router-dom';
+import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
+
 
 export const NavBar = () => {
   const classes = useStyles();
   const [currentTab, setCurrentTab] = React.useState(window.location.pathname);
   const [open, setOpen] = React.useState(false);
   const [compactMenu, setCompactMenu] = React.useState(false);
+  const [alamMoodulidClicked, setAlamMoodulidClicked] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -47,6 +52,11 @@ export const NavBar = () => {
     return url.startsWith("/moodulid");
   }
 
+  const location = useLocation();
+  React.useEffect(() => {
+    setAlamMoodulidClicked(false);
+  }, [location]);
+
   return (
     <Grid id="menu-bar" style={{
       width: "100%",
@@ -61,11 +71,13 @@ export const NavBar = () => {
     }}
     >
       <Grid style={{ alignSelf: "center" }}>
-        <Typography
-          className={classes.typo} style={{ fontSize: compactMenu ? "1.20rem" : "1.40rem" }}
-        >
-          arenguportfoolio
-        </Typography>
+        <Link className={classes.noUnderline} onClick={() => setCurrentTab("/")} to="/">
+          <Typography
+            className={classes.typo} style={{ color: "#000", fontSize: compactMenu ? "1.20rem" : "1.40rem" }}
+          >
+            arenguportfoolio
+          </Typography>
+        </Link>
       </Grid>
 
       <Grid display={{ xs: 'none', md: 'inline-block' }} style={{ alignSelf: "center" }}>
@@ -126,13 +138,38 @@ export const NavBar = () => {
             <Grid className="close-button-container">
               <CloseIcon className="close-button" onClick={handleClose}></CloseIcon>
             </Grid>
-            <Grid style={{ width: "100%", height: "75%", overflowY: "scroll", overflowX: "hidden", padding: "0 10px" }}>
+            <Grid style={{ width: "100%", height: "85%", overflowY: "scroll", overflowX: "hidden", padding: "0 10px" }}>
               <div className="nav">
                 <ul>
                   <li><Link className="nav-link" style={{ color: isActive("enesetutvustus") }} to="/" onClick={handleClose}>enesetutvustus</Link></li>
-                  <li><Link className="nav-link" style={{ color: isActive("moodulid") }} to="/moodulid" onClick={handleClose}>MOODULID</Link></li>
+                  <li><Link className="nav-link" style={{ color: isActive("moodulid") }} to="/moodulid" onClick={handleClose}>MOODULID</Link>
+                  </li>
 
-                  {isMoodulidOpen() &&
+                  {(() => {
+                    if (isMoodulidOpen() && !alamMoodulidClicked) {
+                      return (
+                        <KeyboardArrowUpOutlinedIcon className="alammoodulid-button" onClick={() => setAlamMoodulidClicked(!alamMoodulidClicked)}></KeyboardArrowUpOutlinedIcon>
+                      )
+                    }
+                    if (isMoodulidOpen() && alamMoodulidClicked) {
+                      return (
+                        <KeyboardArrowDownOutlinedIcon className="alammoodulid-button" onClick={() => setAlamMoodulidClicked(!alamMoodulidClicked)} />
+                      );
+                    }
+                    if (alamMoodulidClicked) {
+                      return (
+                        <KeyboardArrowUpOutlinedIcon className="alammoodulid-button" onClick={() => setAlamMoodulidClicked(!alamMoodulidClicked)}></KeyboardArrowUpOutlinedIcon>
+                      )
+                    }
+                    if (!alamMoodulidClicked) {
+                      return (
+                        <KeyboardArrowDownOutlinedIcon className="alammoodulid-button" onClick={() => setAlamMoodulidClicked(!alamMoodulidClicked)} />
+                      );
+                    }
+                  })()
+                  }
+
+                  {((isMoodulidOpen() && !alamMoodulidClicked) || (!isMoodulidOpen() && alamMoodulidClicked)) &&
                     <ul>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("veebikujundus") }} to="/moodulid#veebikujundus" onClick={handleClose}>veebikujundus</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("veebiarendus-ja-veebihaldus") }} to="/moodulid#veebiarendus-ja-veebihaldus" onClick={handleClose}>veebiarendus ja veebihaldus</Link></li>
@@ -142,7 +179,7 @@ export const NavBar = () => {
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("projektijuhtimise-alused") }} to="/moodulid#projektijuhtimise-alused" onClick={handleClose}>projektijuhtimise alused</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("varasemalt-läbitud-ained") }} to="/moodulid#varasemalt-läbitud-ained" onClick={handleClose}>varasemalt läbitud ained</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("karjääriplaneerimine-ja-ettevõtlus") }} to="/moodulid#karjääriplaneerimine-ja-ettevõtlus" onClick={handleClose}>karjääriplaneerimine ja ettevõtlus</Link></li>
-                      <li><Link className="nav-link nav-link-sub" style={{ color: isActive("arenguportfoolio-loomine-ja-tesitamine") }} to="/moodulid#arenguportfoolio-loomine-ja-tesitamine" onClick={handleClose}>arenguportfoolio loomine ja esitamine</Link></li>
+                      <li><Link className="nav-link nav-link-sub" style={{ color: isActive("arenguportfoolio-loomine-ja-esitamine") }} to="/moodulid#arenguportfoolio-loomine-ja-esitamine" onClick={handleClose}>arenguportfoolio loomine ja esitamine</Link></li>
                     </ul>
 
                   }
@@ -155,7 +192,6 @@ export const NavBar = () => {
                 </ul>
               </div>
             </Grid>
-            <Grid style={{ width: "100%", height: "10%" }}></Grid>
           </Box>
         </Dialog>
       </Grid>

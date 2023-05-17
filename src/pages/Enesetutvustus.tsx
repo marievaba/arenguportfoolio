@@ -59,8 +59,14 @@ const Enesetutvustus = () => {
           tere!
         </Typography>
 
+        <Typography
+          className={classes.typo}
+        >
+          mina olen Marie
+        </Typography>
+
         <p className={classes.sisutekst}>
-          <p className={classes.alampealkiri}>mina olen Marie</p> ja õpin kasutajakogemuse disaini nooremspetsialistiks Tartu Rakenduslikus Kolledžis. Eelnevalt õppisin Tartu Kunstikoolis kujundusgraafikuks ja aastakese Järvamaa Kutsehariduskeskuses hobuhooldajaks.<br></br>
+          ja õpin kasutajakogemuse disaini nooremspetsialistiks Tartu Rakenduslikus Kolledžis. Eelnevalt õppisin Tartu  Kunstikoolis kujundusgraafikuks ja aastakese Järvamaa Kutsehariduskeskuses hobuhooldajaks.<br></br>
           Esimese kursuse praktika sooritasin Saksamaal, tänu sellele saan hakkama uutes olukordades ja võõrastes keskkondades. Teise kursuse praktika läbisin hoopis front-end arendajana. Ma ei karda suhelda ja vajadusel abi küsida. Minu eesmärgiks on õppida võimalikult palju, saada tagasisidet ja selle põhjal areneda.<br></br>
           Otsutasin antud eriala valida, sest mulle meeldib asju ise teha ja kohe tulemusi näha ning ITs on tulevik ning ma ei taha elu lõpuni töötada klienditeeninduses.  Antud eriala õppides sain aga iga päevaga aina rohkem aru kui vähe mind tegelikult disain huvitab. Sellepärast olen eriti tänulik, et sain spetsialiseerumispraktika läbida arendajana ja leida lõpuks asja mis mulle ka päriselt pinget pakub. Varasem kogemus oli minimaalne, Kunstikoolis tutvusime natuke HTMLi ja CSSiga.<br></br>
           Mulle meeldib väga ka tänavakunst ja sõbrannaga teeme kleepse nimega

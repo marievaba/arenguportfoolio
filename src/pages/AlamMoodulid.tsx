@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Typography } from "@material-ui/core";
 import { Grid } from "@mui/material";
 import { useStyles } from "../styles";
@@ -16,6 +16,15 @@ import video from "../images/putukad.mp4";
 import CustomButton from '../components/CustomButton';
 
 export const Animatsioonid = () => {
+  const [isAutoplay, setIsAutoplay] = useState(true);
+
+  React.useEffect(() => {
+    const width = window.innerWidth;
+    if (width <= 680) {
+      setIsAutoplay(false)
+    }
+  })
+
   const classes = useStyles();
   return (
     <>
@@ -27,11 +36,10 @@ export const Animatsioonid = () => {
         Kasutatud vahendid: After Effects ja Media Encoder.
       </p>
       <>
-        <video width="100%" autoPlay loop>
+        <video id="animation-video" width="100%" autoPlay={isAutoplay} loop>
           <source src={video} type="video/mp4" />
         </video>
       </>
-
     </>
   )
 }
