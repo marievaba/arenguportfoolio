@@ -72,6 +72,23 @@ body {
   cursor: pointer;
 }
 
+.go-up-button {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  color: #ebebeb;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 4;
+  background-color: #f17e917e;
+}
+
+.go-up-button:hover {
+  color: #F17E92;
+  cursor: pointer;
+}
+
 .nav-link:hover {
   color: #fff !important;
 }

@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 import { useRef } from "react";
 import { ABTestimine, Animatsioonid, ArenguportfoolioEsitamine, ArvutivõrkudeAlused, AsjaajamiseAlused, Bootstrap, DisainiKavandamine, ErialaneMatemaatika, EttevõtluseAlused, GoogleAnalyticsKasutamine, GraafilineDisainJaMultimeedia, HTMLjaCSS, ITKorraldus, ITSüsteemideRiistvara, ITÕigus, InfoturbeAlused, IntervjuuKoostamine, KarjääriplaneerimiseAlused, KasutajakogemuseAnalüüsiAlused, MeeskonnatööAlused, ObjektorienteeritudProgrammeerimine, Operatsioonisüsteemid, ProgrammeerimiseAlused, ProjektihalduseAlused, ReklaamiPsühholoogia, SissejuhatusTarkvaraarendusse, SisuhaldusSüsteemid, StruktuuriKavand, SuhtlemiseAlused2, SuhtlemisePsühholoogilineAnalüüs, SuhtlemisÕpetus, TestimiseAlused, Töökeskkonnaohutus, TöötamiseÕiguslikudAlused, UIDisain, VahenditeKasutaminePrototüüpimiseks, Veebihaldus, VeebitehnoloogiadJaKujundusvahendid, Versioonihaldus, VisandiLoomine } from './AlamMoodulid';
 import { SideBar } from '../components/SideBar';
+import { GoUpButton } from '../components/GoUpButton';
 
 const Moodulid = () => {
   const classes = useStyles();
@@ -72,7 +73,8 @@ const Moodulid = () => {
 
   return (
     <>
-      <SideBar/>
+      <GoUpButton />
+      <SideBar />
       <Grid
         container
         md={12}
