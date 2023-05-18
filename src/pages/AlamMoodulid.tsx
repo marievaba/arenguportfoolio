@@ -36,7 +36,7 @@ export const Animatsioonid = () => {
         Kasutatud vahendid: After Effects ja Media Encoder.
       </p>
       <>
-        <video id="animation-video" width="100%" autoPlay={isAutoplay} loop>
+        <video id="animation-video" width="100%" preload="auto" autoPlay={isAutoplay} loop={isAutoplay} controls={!isAutoplay} playsInline>
           <source src={video} type="video/mp4" />
         </video>
       </>
