@@ -3,6 +3,7 @@ import { Typography } from "@material-ui/core";
 import { Grid } from "@mui/material";
 import { useStyles } from "../styles";
 import libutigu from "../images/libutigu7.png";
+import libutigu1 from "../images/libutigu6.png";
 import libutigu2 from "../images/libutigu5.png";
 
 const Eneserefleksioon = () => {
@@ -36,6 +37,9 @@ const Eneserefleksioon = () => {
         <Grid style={{ display: "flex", justifyContent: "center" }}>
           <img width="50%" src={libutigu} />
         </Grid>
+        <Grid className="eneseref-tigu-desktop" style={{ display: "flex", justifyContent: "center" }}>
+          <img width="50%" src={libutigu1} />
+        </Grid>
       </Grid>
       
       <Grid
@@ -54,6 +58,7 @@ const Eneserefleksioon = () => {
           Natuke kordasime eelmisel aastal Linuxiga õpitut ja kasutasime uusi käske terminalis. Lõime internetipanga prototüübi ja piilusime teisi portotüüpimise vahendeid. A/B testimise aines oli kõik täiesti uus.<br></br>
           Põhiline rõhk oli praktikakoha leidmisel kuna selleks oli aega ainult viis nädalat. Kirjutasin e-maile, täiendasin oma CVd ja tegin portfoolio. Tunnen end IT maailmas juba natuke kindlamalt, sellele aitab kaasa ka väga hea praktikakoht.<br></br>
           Praktikaperioodi jooksul õppisin arendustiimis töötama, tagasiside põhjal oma tööd muutma, uusi keskkondi ja programme kasutama ning täiendasin oma koodikirjutamise oskuseid. Sain väärtusliku kogemuse erialases töökeskkonnas, omandasin suhtlemise, meeskonnas töötamise ja enesedistsipliini oskusi.<br></br>
+          Kuna kasutajakogemusega seotud ülesandeid oli vähe, siis otsustasin mitte kasutada sisuhaldussüsteeme (näiteks Google sites või Wordpress). Kirjutasin oma arenguportfoolio ise nullist valmis kasutades HTML, CSS, JavaScript, React ja Material UI. Kõigeks selleks kasutasin oma UX/UI teadmisi ja omandatud koodikirjutamise oskuseid. Lasin korduvalt oma loodud portfooliot testida tuttavatel, arendajal ja ka juhendajal. Saadud tagasiside põhjal viisin sisse täiendused ja parandused. Lisaks kasutan igapäevaselt ka oma töös Material UI´d, mis on kasutajaliidese disaini raamistik.<br></br>
           Üldiselt tunnen, et minu areng on olnud suur. Oktoobris olin inimene, kes ei julgenud teha koodis muudatusi, kartes et see lõhub midagi ära. Küsisin iga asjaga abi ja mõnikord ei saanud ka siis aru, mida ma täpselt tegema pean. Täna olen inimene, kes leiab iseseisvalt lahendusi, pakub ise välja ideid ja ei karda enam küsida, kui ei leia midagi üles või täpselt aru ei saa. Lisaks leian koodist üles ka kohti, mille leidmiseks minult abi palutakse. Ma ei anna alla kui kohe lahendust ei leia, võimalusel võtan ette teise pileti, et mõtted eemale saada ja vaatan hiljem probleemi uuesti värskema pilguga.
         </p>
       </Grid>
