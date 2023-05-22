@@ -30,7 +30,7 @@ const Praktika = () => {
           spetsialiseerumispraktika
         </Typography>
         <p className={classes.sisutekst}>
-          Minu spetsialiseerumispraktika toimus vahemikus 10.10.2022 - 21.04.2023 asutuses <a className={classes.link} target="blank" href="https://www.quretec.com/"> Quretec </a> Praktikakoha leidsin tänu tutvustele ja Tartu Rakendusliku Kolledži praktikakohtade nimekirjale.
+          Minu spetsialiseerumispraktika toimus vahemikus 10.10.2022 - 21.04.2023 asutuses <a className={classes.link} target="blank" href="https://www.quretec.com/"> Quretec OÜ </a> Praktikakoha leidsin tänu tutvustele ja Tartu Rakendusliku Kolledži praktikakohtade nimekirjale.
         </p>
         <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://docs.google.com/document/d/1cKOEkaD-pNn_2rjsB5YR0c8g4K2rmFRr/edit?usp=sharing&ouid=117508464084897999916&rtpof=true&sd=true" target="_blank">praktikaaruanne</a>
