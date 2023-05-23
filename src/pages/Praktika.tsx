@@ -80,15 +80,15 @@ const Praktika = () => {
           juhendaja hinnang
         </Typography>
         <p className={classes.sisutekst}>
-          Praktikant sobib suurepäraselt frontend arendaja rolli. Ta on
+          Praktikant sobib suurepäraselt <i>frontend</i> arendaja rolli. Ta on
           näidanud üles suurt huvi ja entusiasmi veebiarenduse vastu ning
           on väga pühendunud oma oskuste täiendamisele selles
           valdkonnas. Praktikant on väga kiiresti õppinud looma keeruka
-          veebirakenduse visuaalselt poolt ning saab edukalt hakkama
-          <i>HTML</i>, <i>CSS</i> ja <i>JavaScript</i> koodi kirjutamisega. Praktikant on
+          veebirakenduse visuaalselt poolt ning saab edukalt hakkama 
+          <i> HTML</i>, <i>CSS</i> ja <i>JavaScript</i> koodi kirjutamisega. Praktikant on
           suutnud kiiresti kohaneda uute tehnoloogiatega ja õppinud uusi
           programmeerimisvahendeid, mis on oluline, et olla edukas
-          frontend arendaja. Ta on väga hea meeskonnakaaslane ning
+          <i> frontend</i> arendaja. Ta on väga hea meeskonnakaaslane ning
           suudab hästi koostööd teha erinevate meeskonnaliikmetega, et
           tagada projekti ülesannete täitmine. Ta on väga täpne ja
           tähelepanelik, mis on veebiarenduse valdkonnas kahtlemata
@@ -158,8 +158,8 @@ const Praktika = () => {
           tutvumispraktika
         </Typography>
         <p className={classes.sisutekst}>
-          Minu tutvumispraktika toimus vahemikus 04.04.2022 - 08.05.2022 asutuses <a className={classes.link} target="blank" href="https://www.juston.com/en/home_en/"> JustOn GmbH</a>. Neli nädalat viibisin Saksamaal ja ühe nädala viisin läbi kaugtööna.<br></br>
-          Pakkumise sain Tartu Rakendusliku Kolledži rahvusvaheliste suhete koordinaatorilt, kes pakkus välispraktika võimalust. Praktikal oli kaks projekti, mille eesmärkideks olid <i>settlement</i> protsessi optimeerimine ja <i>entry</i> sobitamise protsess.
+          Minu tutvumispraktika toimus vahemikus 04.04.2022 - 08.05.2022 asutuses <a className={classes.link} target="blank" href="https://www.juston.com/en/home_en/"> JustOn GmbH</a>. Neli nädalat viibisin Saksamaal ja ühe nädala läbisin kaugtööna.<br></br>
+          Välispraktika võimalust pakkus mulle Tartu Rakendusliku Kolledži rahvusvaheliste suhete koordinaator. Praktikal oli kaks projekti, mille eesmärkideks olid <i>settlement</i> protsessi optimeerimine ja <i>entry</i> sobitamise protsess.
         </p>
         <CustomButton style={{ margin: 4 }}>
           <a className={classes.cvLink} href="https://docs.google.com/presentation/d/1OdWvR2VNg-1ZFuuUnroBrT3RWrsUYWyBfBMH8Fm__WA/edit?usp=sharing" target="_blank">praktika esitlus</a>
@@ -230,7 +230,7 @@ const Praktika = () => {
         </Typography>
         <p><b><i>Settlement</i> protsessi optimeerimine</b> <br></br>
           Alustasin erinevate jooniste tegemisega, kuhu nupud ja tekst paigutada ning mida kuvada. Kõige suuremaks katsumuseks oli protsessi näitamine kasutajale, selleks joonistasin erinevaid indikaatoreid. Pidin koostama kasutajalood, et saaksin paremini aru, mida muuta. Oluline oli, et kasutajal oleks võimalikult lihtne kogu protsess läbida.<br></br>
-          Esimese versiooni tegin ilma värvideta ja panin paika tähtsamate elementide asukohad. Juhendajalt tagasiside saades lisasin värvid, muutsin asukohti ja leidsime, et kasutajal peaks olema valik, kui palju infot korraga  kuvada. Avastasin, et <i>Figma's</i> on olemas <i>Salesforce UI kit</i> ja tänu sellele sain palju kiiremini ja lihtsamalt edasi töötada. Proovisin erinevaid protsessi indikaatoreid ja juhendaja valis parima lahenduse. Tagasiside saades muutsin info kuvamise elemente ja lisasin ikoonid, millel hiirega hõljudes näeb veel lisaks informatsiooni.
+          Esimese versiooni tegin ilma värvideta ja panin paika tähtsamate elementide asukohad. Juhendajalt tagasiside saades lisasin värvid, muutsin asukohti ja leidsime, et kasutajal peaks olema valik, kui palju infot korraga  kuvada. Avastasin, et <i>Figma</i>'s on olemas <i>Salesforce UI kit</i> ja tänu sellele sain palju kiiremini ja lihtsamalt edasi töötada. Proovisin erinevaid protsessi indikaatoreid ja juhendaja valis parima lahenduse. Tagasiside saades muutsin info kuvamise elemente ja lisasin ikoonid, millel hiirega hõljudes näeb veel lisaks informatsiooni.
         </p>
         <img width="100%" src={proto1} />
 
@@ -238,7 +238,7 @@ const Praktika = () => {
 
         <p><b><i>Entry</i> sobitamise protsess</b> <br></br>
           Järgmises projektis keskendusin ühele osale eelmisest. Ülesandeks oli kasutajale kuvada <i>entry</i> sobitamise protsess. Esimese asjana lugesin põhjalikumat kirjeldust, tegin konspekti ja esimesed kavandid. Arutasime juhendajaga, mida lisada ja kuidas seda visualiseerida.<br></br>
-          Esimese lahendusena pakkusin välja tabeli <i>entry</i> valimiseks ja info kuvamiseks ning teise lahendusena kaardid. Juhendajaga nõu pidades otsustasime esimese kasuks. Töötasin sellega edasi ja lisasin võimaluse kuvada rohkem või vähem informatsiooni. Arutasime erinevaid visuaalseid võimalusi ning valisime välja ikoonid, mida kasutada. Lõpuks muutsin veel väärtuste asukohta, lisasin IBANi ja järjestasin info protsendi väärtuse alusel.
+          Esimese lahendusena pakkusin välja tabeli <i>entry</i> valimiseks ja info kuvamiseks ning teise lahendusena kaardid. Juhendajaga nõu pidades otsustasime esimese kasuks. Töötasin sellega edasi ja lisasin võimaluse kuvada rohkem või vähem informatsiooni. Arutasime erinevaid visuaalseid võimalusi ning valisime välja ikoonid, mida kasutada. Lõpuks muutsin veel väärtuste asukohta, lisasin <i>IBAN</i>'i ja järjestasin info protsendi väärtuse alusel.
 
         </p>
         <img width="100%" src={proto} />

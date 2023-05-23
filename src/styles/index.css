@@ -33,6 +33,21 @@ body {
   background-size: 100%;
 }
 
+.nimi {
+  display: none;
+  color: transparent;
+}
+
+.marie-text:hover {
+  cursor: pointer;
+  color: #F17E92;
+}
+
+.marie-text:hover + .nimi {
+  display: inline;
+  color: #F17E92;
+}
+
 /* navbar stuff */
 .burger-button:hover {
   color: #fff;

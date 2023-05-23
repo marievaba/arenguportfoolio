@@ -110,11 +110,11 @@ const Koolitused = () => {
         <Typography
           className={classes.typo}
         >
-          <i>Google</i> koolitus "Leia uusi kliente. Mõistlik ja kulutõhus videokampaania Youtubes"
+          <i>Google</i> koolitus "Leia uusi kliente. Mõistlik ja kulutõhus videokampaania <i>Youtube</i>'s"
         </Typography>
 
         <p className={classes.sisutekst}>
-          14.10.2021 <i>Google</i> koolituse raames saime teadmised digiturundusest Youtubes. Rääkisime lähemalt, kuidas ennast reklaamida, kuidas teha seda kõige optimaalsemalt ning kuidas püüda klientide tähelepanu.
+          14.10.2021 <i>Google</i> koolituse raames saime teadmised digiturundusest <i>Youtube</i>'s. Rääkisime lähemalt, kuidas ennast reklaamida, kuidas teha seda kõige optimaalsemalt ning kuidas püüda klientide tähelepanu.
         </p>
 
 
