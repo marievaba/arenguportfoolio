@@ -55,12 +55,12 @@ const Moodulid = () => {
         handleScroll(projektijuhtimiseRef)
         break;
       }
-      case "/moodulid#varasemalt-läbitud-ained": {
-        handleScroll(ainedRef)
-        break;
-      }
       case "/moodulid#karjääriplaneerimine-ja-ettevõtlus": {
         handleScroll(karjääriplaneerimineRef)
+        break;
+      }
+      case "/moodulid#varasemalt-läbitud-ained": {
+        handleScroll(ainedRef)
         break;
       }
       case "/moodulid#arenguportfoolio-loomine-ja-esitamine": {
@@ -218,18 +218,7 @@ const Moodulid = () => {
           <MeeskonnatööAlused />
         </Grid>
 
-        <Grid item md={12} ref={ainedRef}>
-          <Grid className={classes.shortDividerBlack} />
-          <Typography className={`${classes.typoCenter} h1-header`}>
-            varasemalt läbitud ained
-          </Typography>
-        </Grid>
-        <Grid item md={12}>
-          <GraafilineDisainJaMultimeedia />
-        </Grid>
-        {/* <Grid item md={6}>
-
-        </Grid> */}
+        
 
         <Grid item md={12} ref={karjääriplaneerimineRef}>
           <Grid className={classes.shortDividerBlack} />
@@ -251,6 +240,16 @@ const Moodulid = () => {
           <SuhtlemisÕpetus />
           <Grid className={classes.padding} />
           <TöötamiseÕiguslikudAlused />
+        </Grid>
+        
+        <Grid item md={12} ref={ainedRef}>
+          <Grid className={classes.shortDividerBlack} />
+          <Typography className={`${classes.typoCenter} h1-header`}>
+            varasemalt läbitud ained
+          </Typography>
+        </Grid>
+        <Grid item md={12}>
+          <GraafilineDisainJaMultimeedia />
         </Grid>
 
         <Grid item md={12} ref={arenguportfoolioRef}>

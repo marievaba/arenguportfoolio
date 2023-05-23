@@ -32,7 +32,7 @@ export const Animatsioonid = () => {
         animatsioonid
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised töömaailmas kasutatavatest veebitehnoloogiatest ja kujundusvahenditest.
+        Kursuse raames omandasin teadmised töömaailmas kasutatavatest veebitehnoloogiatest ja kujundusvahenditest.
         Kasutatud vahendid: After Effects ja Media Encoder.
       </p>
       <>
@@ -54,7 +54,7 @@ export const Bootstrap = () => {
         bootstrap
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised töömaailmas kasutatvatest veebitehnoloogiatest ja kujundusvahenditest.
+        Kursuse raames omandasin teadmised töömaailmas kasutatavatest veebitehnoloogiatest ja kujundusvahenditest.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://vabamagimarieelisabeth.ikt.khk.ee/bootstrap/1018/iseseisev/" target="_blank">veebileht kassidele</a>
@@ -99,7 +99,7 @@ export const HTMLjaCSS = () => {
         HTML ja CSS
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised töömaailmas kasutatvatest veebitehnoloogiatest ja kujundusvahenditest. Õpime HTML ja CSS abil veebilehe loomist, lähtudes W3C standardist ja kokkulepitud koodistandartitest.
+        Kursuse raames omandasin teadmised töömaailmas kasutatavatest veebitehnoloogiatest ja kujundusvahenditest. Õppisin <i>HTML</i> ja <i>CSS</i> abil veebilehe loomist, lähtudes <i>W3C</i> standardist ja kokkulepitud koodistandarditest.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://vabamagimarieelisabeth.ikt.khk.ee/HTML%20&%20CSS/1005/iseseisev/" target="_blank">trükifirma koduleht</a>
@@ -124,7 +124,7 @@ export const VeebitehnoloogiadJaKujundusvahendid = () => {
         veebitehnoloogiad ja kujundusvahendid
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames uurime erinevate kujundus- ja prototüüpimisvahendite kohta, viime kurssi end veebikujundus trendidega ja täiendame oma teadmisi erinevate veebitehnoloogiate osas.
+        Kursuse raames uurisin erinevate kujundus- ja prototüüpimisvahendite kohta, viisin end kurssi veebikujunduse trendidega ja täiendasin oma teadmisi erinevate veebitehnoloogiate osas.
       </p>
 
       <CustomButton style={{ margin: 4 }}>
@@ -147,7 +147,7 @@ export const VisandiLoomine = () => {
         visandi loomine
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised piktogrammidest, ligatuuridest ja monogrammidest. Samuti räägime Bikablost ja teostame iga teema kohta ülesande.
+        Kursuse raames omandasin teadmised piktogrammidest, ligatuuridest ja monogrammidest. Samuti rääkisime <i>Bikablo'st</i> ja teostasin iga teema kohta ülesande.
       </p>
 
       <img width="100%" src={visand} />
@@ -166,7 +166,7 @@ export const StruktuuriKavand = () => {
         struktuurikavand
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised veebirakenduste kujundamisest.Loome high fidelty prototüübi ja õpime pixel perfect designi.
+        Kursuse raames omandasin teadmised veebirakenduste kujundamisest. Lõin <i>high fidelty</i> prototüübi ja õppisin <i>pixel perfect</i> disaini.
       </p>
 
       <CustomButton style={{ margin: 4 }}>
@@ -189,7 +189,7 @@ export const TestimiseAlused = () => {
         testimise alused
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised kasutuskogemuse testi põhimõtetest. Aine jooksul viime läbi testi mõnel enda koostatud prototüübil. Lasin kasutajatel testida enda aasta tegija võistlustööd, tagasiside oli positiivne ja muudatusi sisse ei viinud.
+        Kursuse raames omandasin teadmised kasutuskogemuse testi põhimõtetest. Aine jooksul viisin läbi testi ühel enda koostatud prototüübil. Lasin kasutajatel testida enda aasta tegija võistlustööd, tagasiside oli positiivne ja muudatusi sisse ei viinud.
       </p>
     </>
   )
@@ -205,7 +205,7 @@ export const UIDisain = () => {
         UI disain
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised visualiseerimise, kompositsiooni ja stiliseerimise kohta.  Ülesande teostamisel kasutame Adobe Illustarorit. Illustaratsioon raamatule.
+        Kursuse raames omandasin teadmised visualiseerimise, kompositsiooni ja stiliseerimise kohta.  Ülesande teostamisel kasutasin <i>Adobe Illustaror'it</i>. Lõin illustratsiooni raamatule.
       </p>
       <img className="mummud-img" width="75%" src={mummud} />
     </>
@@ -222,7 +222,7 @@ export const SissejuhatusTarkvaraarendusse = () => {
         sissejuhatus tarkvaraarendusse
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised infosüsteemi arendamise etappidest. Kursuse sisuks on infosüsteemi elutsükkel, persoona ja kasutaja lugu, prototüüpimine, andmemudel ning protsessimudel. Lõime persoonasid ja koostasime kasutajalugusid. Panime saadud tulemuste põhjal paberile kirja e-poe nõuded ja koostasime kavandi, edasi tegime Moqups keskkonnas mockupi. Tutvusime andme- ja protsessimudelitega ning koostasime need Gliffy keskkonnas
+        Kursuse raames omandasin teadmised infosüsteemi arendamise etappidest. Kursuse sisuks on infosüsteemi elutsükkel, persoona ja kasutaja lugu, prototüüpimine, andmemudel ning protsessimudel. Lõin persoonasid ja koostasin kasutajalugusid. Panin saadud tulemuste põhjal paberile kirja e-poe nõuded ja koostasin kavandi, edasi tegin <i>Moqups</i> keskkonnas <i>mockup'i</i>. Tutvusin andme- ja protsessimudelitega ning koostasin need <i>Gliffy</i> keskkonnas.
       </p>
       <Grid style={{ display: "flex", justifyContent: "center" }}>
         <img width="60%" src={libutigu0} />
@@ -241,7 +241,7 @@ export const SisuhaldusSüsteemid = () => {
         sisuhaldusüsteemid
       </Typography>
       <p className={classes.sisutekst}>
-        Õppisin selles aines kasutama WordPressi. Kirjutama postitusi, muutma lehe välimust, looma ja muutma menüüd, kasutama pluginaid ja looma e-poodi. XAMPP veebiserveri paigalduse juhend - Ülesandeks oli luua juhend mille järgi saaks XAMPP lokaalse veebiserveri paigaldada oma arvutisse. Õppisin paigalduse ära. E-poe disainikavand - Ülesandeks oli luua prototüübina kavand enda e-poe jaoks. Tegin mobiilivaatele. Õppisin looma erinevaid vaateid Adobe XD´s. E-pood - Ülesandeks oli luua toimiv e-pood. 10 toodet, igast tootest 2 vaadet. Õppisin kasutama WooCommerce pluginat. Disainitrendide lahendus - Ülesandeks oli valida kaks veebisaiti, millega need tegelevad ja milliseid disainitrende seal kasutatud on. Nägin erinevaid disainitrende ja kuidas neid kasutatud on.
+        Õppisin selles aines kasutama <i>WordPress'i</i>. Kirjutama postitusi, muutma lehe välimust, looma ja muutma menüüd, kasutama pluginaid ja looma e-poodi. <i>XAMPP</i> veebiserveri paigalduse juhend - Ülesandeks oli luua juhend mille järgi saaks <i>XAMPP</i> lokaalse veebiserveri paigaldada oma arvutisse. Õppisin paigalduse ära. E-poe disainikavand - Ülesandeks oli luua prototüübina kavand enda e-poe jaoks. Tegin mobiilivaatele. Õppisin looma erinevaid vaateid <i>Adobe XD's</i>. E-pood - Ülesandeks oli luua toimiv e-pood. 10 toodet, igast tootest 2 vaadet. Õppisin kasutama <i>WooCommerce</i> pluginat. Disainitrendide lahendus - Ülesandeks oli valida kaks veebisaiti, millega need tegelevad ja milliseid disainitrende seal kasutatud on. Nägin erinevaid disainitrende ja kuidas neid kasutatud on.
       </p>
 
       <CustomButton style={{ margin: 4 }}>
@@ -264,7 +264,7 @@ export const Versioonihaldus = () => {
         versioonihaldus
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised versioonihaludsest ning tutvume erinevate keskkondadega. Õpime Githubis repo ja uue branchi loomist ning käsurealt muudatusi Githubi lisama. Pidime võrdlema kahte versioonihalduse programmi. Õppisime kasutama Githubi ja Giti, kasutade vahel liikumist, branchide loomist ja kloonimist. Lisaks õppisime käsurealt toimetama.
+        Kursuse raames omandasin teadmised versioonihaldusest ning tutvusin erinevate keskkondadega. Õppisin <i>Github'is repo</i> ja uue <i>branch'i</i> loomist ning käsurealt muudatusi <i>Github'i</i> lisama. Pidin võrdlema kahte versioonihalduse programmi. Õppisin kasutama <i>Github'i</i> ja <i>Git'i</i>, kaustade vahel liikumist, <i>branch'ide</i> loomist ja kloonimist. Lisaks õppisin käsurealt toimetama.
       </p>
 
       <CustomButton style={{ margin: 4 }}>
@@ -284,7 +284,7 @@ export const Veebihaldus = () => {
         veebihaldus
       </Typography>
       <p className={classes.sisutekst}>
-        Loob veebiserveri lähtudes lähteülesande olevatest funktsionaalsetest nõuetest; haldab veebiserverit seadistades haldusvahendeid. Lõime Ubuntu serveri, installisime Apache ja paigaldasime Wordpress'i.
+        Lõin veebiserveri lähtudes lähteülesande olevatest funktsionaalsetest nõuetest. Haldasin veebiserverit seadistades haldusvahendeid. Lõin <i>Ubuntu</i> serveri, installisin <i>Apache</i> ja paigaldasin <i>WordPress'i</i>.
       </p>
       <Grid style={{ display: "flex", justifyContent: "center" }}>
         <img width="70%" src={libutigu4} />
@@ -303,8 +303,8 @@ export const VahenditeKasutaminePrototüüpimiseks = () => {
         vahendite kasutamine prototüüpimiseks, arendusraamistikud
       </Typography>
       <p className={classes.sisutekst}>
-        Internetipanga kasutajaliidese loomine enda poolt valitud vahenditega ja tutvumine arendusraamistik Vue'ga.
-        Kasutatud vahendid: Figma ja Visual Studio code.
+        Lõin internetipanga kasutajaliidese enda poolt valitud vahenditega ja tutvusin arendusraamistik <i>Vue'ga</i>.
+        Kasutatud vahendid: Figma ja Visual Studio Code.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://github.com/marievaba/vue3" target="_blank">vue</a>
@@ -343,10 +343,10 @@ export const GoogleAnalyticsKasutamine = () => {
       <Typography
         className={`${classes.alampealkiri} h2-header`}
       >
-        google analyticsi kasutamine
+        <i>google analytics'i</i> kasutamine
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised. Google Analyticsi funktsioonidest ja võimalustest. Analyticsi paigaldamine käsitsi ja Wordpress pistikprogrammide abil. Lõime kampaania jaoks UTM tagidega lingi. Lõime ise kampaania oma e-poe lehele ja jälgisime seda. Pidime välja tooma kolm tähtsamat näitajat, koostama dokumendi ja kirjeldama seal mida need teevad ja milleks kasulikud on. Analüüsisime Google Merchandise Store ja selle edukust viimase kahe kuu jooksul.
+        Kursuse raames omandasin teadmised <i>Google Analytics'i</i> funktsioonidest ja võimalustest. <i>Analytics'i</i> paigaldasin käsitsi ja <i>WordPress</i> pistikprogrammide abil. Lõin kampaania jaoks <i>UTM tag'idega</i> lingi. Lõin ise kampaania oma e-poe lehele ja jälgisin seda. Pidin välja tooma kolm tähtsamat näitajat, koostama dokumendi ja kirjeldama seal mida need teevad ja milleks kasulikud on. Analüüsisin <i>Google Merchandise Store</i> ja selle edukust viimase kahe kuu jooksul.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://docs.google.com/document/d/1a51LYmRxMCzd0qlhm6xVT79wxjF-g8oEiMEbMalBt58/edit?usp=sharing" target="_blank">google analytics</a>
@@ -365,7 +365,7 @@ export const IntervjuuKoostamine = () => {
         intervjuu koostamine
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised erialasest intervjuu läbiviimisest lähtuvalt ülesandest ning analüüsitakse tulemusi. Kursuse raames koostame ise intervjuu ja viime läbi. Rääkisime kavntitatiivsest ja kvalitatiivsest uurimis meetodist ning intervjuu eesmärkidest. Pidime valima mingi lehe millele analüüs koostada, koostasin küsimused ja valisin inimesed kellega intervjuud läbi viia. Saadud andmed pidin analüüsima ja koostama diagrammi.
+        Kursuse raames omandasin teadmised erialasest intervjuu läbiviimisest lähtuvalt ülesandest ning analüüsisin tulemusi. Koostasin ise intervjuu ja viisin läbi. Rääkisime kvantitatiivsest ja kvalitatiivsest uurimise meetoditest ning intervjuu eesmärkidest. Pidin valima mingi lehe, millele analüüs koostada, koostasin küsimused ja valisin inimesed kellega intervjuud läbi viia. Saadud andmed pidin analüüsima ja koostama diagrammi.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://docs.google.com/document/d/1RSZZLbagCL8cOjhpZOZv0Wqmw8ve7RU4uHveJOcEJEg/edit?usp=sharing" target="_blank">intervjuu</a>
@@ -384,7 +384,7 @@ export const KasutajakogemuseAnalüüsiAlused = () => {
         kasutajakogemuse analüüsi alused
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised kasutajakogemuse analüüsi põhimõtetest. Õpime tundma sihtgruppi ja seda kirjeldama, kasutusmugavuse testi koostamist ja selle läbiviimist ning prototüüpimise aluseid ja prototüübi loomist. Kuulasime loengud erinevatest sihtrühmadest ja pidime leidma ühe reklaami, millel on vale sihtrühm. Valisime reklaamiks Laste Fondi reklaami, pildil oli kujutatud lusikaga laps ja nõudepesukapslid. Kuulasime loengut erinevatest kasutusmugavuse testidest ja viisime ise läbi testi. Olin paaris kursusekaaslasega ja küsisin temalt hinnavaatluse foorumi kasutamise kohta küsimusi, tema küsisi minult Elisa kõnekaartide kohta. Kuulasime loengut prototüüpide loomisest ja tegime koos õpetajaga Figmas e-valimiste programmi kasutajasõbralikumaks.
+        Kursuse raames omandasin teadmised kasutajakogemuse analüüsi põhimõtetest. Õppisin tundma sihtgruppi ja seda kirjeldama, kasutusmugavuse testi koostamist ja selle läbiviimist ning prototüüpimise aluseid ja prototüübi loomist. Kuulasin loenguid erinevatest sihtrühmadest ja pidin leidma ühe reklaami, millel on vale sihtrühm. Valisin reklaamiks Laste Fondi reklaami, pildil oli kujutatud lusikaga laps ja nõudepesukapslid. Kuulasin loengut erinevatest kasutusmugavuse testidest ja viisin ise läbi testi. Olin paaris kursusekaaslasega ja küsisin temalt hinnavaatluse foorumi kasutamise kohta küsimusi, tema küsis minult Elisa kõnekaartide kohta. Kuulasin loengut prototüüpide loomisest ja tegime koos õpetajaga <i>Figma's</i> e-valimiste programmi kasutajasõbralikumaks.
       </p>
     </>
   )
@@ -400,7 +400,7 @@ export const ABTestimine = () => {
         A/B testimine
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised testi läbiviimise põhimõtetest ja kasutatavatest vahenditest. Viime iseseisvalt läbi A/B testi lähtuvalt lähteülesandest. Lõime wordpressi lehe ja testisime kahte erinevat lahendust.
+        Kursuse raames omandasin teadmised testi läbiviimise põhimõtetest ja kasutatavatest vahenditest. Viisin iseseisvalt läbi A/B testi lähtuvalt lähteülesandest. Lõin <i>WordPress'i</i> lehe ja testisin kahte erinevat lahendust.
       </p>
       <Grid style={{ display: "flex", justifyContent: "center" }}>
         <img width="45%" src={libutigu6} />
@@ -421,7 +421,7 @@ export const ReklaamiPsühholoogia = () => {
         reklaamipsühholoogia
       </Typography>
       <p className={classes.sisutekst}>
-        Reklaami mõju ja roll. Mõjustamispsühholoogia võtted reklaamis. Reklaami tajumine: Tähelepanu ja mäluprotsessid. Veebis reklaamide analüüs ja hindamine. veebi mõjutusvahendite Kuidas võiks teha reklaami?: Tarbijakäitumine. Reklaamistrateegiad. Veebis reklaamikampaania kavandamine. Reklaamitegevuse õiguslik ja eetiline regulatsioon Reklaami analüüs, pidime valima ühe reklaami ja koostama selle kohta analüüsi.  Saadud teadmiste põhjal pidime ise looma reklaami.
+        Reklaami mõju ja roll. Mõjustamispsühholoogia võtted reklaamis. Reklaami tajumine: Tähelepanu ja mäluprotsessid. Veebis reklaamide analüüs ja hindamine. Kuidas võiks teha reklaami? Tarbijakäitumine. Reklaamistrateegiad. Veebis reklaamikampaania kavandamine. Reklaamitegevuse õiguslik ja eetiline regulatsioon Reklaami analüüs, pidime valima ühe reklaami ja koostama selle kohta analüüsi. Saadud teadmiste põhjal pidin ise looma reklaami.
       </p>
       <img className="reklaam-img" width="90%" src={reklaam} />
     </>
@@ -438,7 +438,7 @@ export const SuhtlemiseAlused2 = () => {
         suhtlemise alused 2
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised suhtlemise ja kommunikatsiooni olemusest. Teeme selgeks efektiivse kommunikatsiooni mõjutajad, suhtlemises kasutatavad mõjutusvõtted, aktiivse kuulamise ja peegeldamise teemad. Pidime koostama video põhjal analüüsi. Täiendama etteantud dokumenti ja koostama küsimusi.
+        Kursuse raames omandasin teadmised suhtlemise ja kommunikatsiooni olemusest. Õppisime selgeks efektiivse kommunikatsiooni mõjutajad, suhtlemises kasutatavad mõjutusvõtted, aktiivse kuulamise ja peegeldamise teemad. Pidin koostama video põhjal analüüsi, täiendasin etteantud dokumenti ja koostasin küsimusi.
       </p>
       <Grid style={{ display: "flex", justifyContent: "center" }}>
         <img width="60%" src={libutigu3} />
@@ -457,7 +457,7 @@ export const SuhtlemisePsühholoogilineAnalüüs = () => {
         suhtlemise psühholoogiline analüüs
       </Typography>
       <p className={classes.sisutekst}>
-        Suhtlemiskompetentsus ja selle arendamise võimalused. Suhtlemine kui kommunikatsiooniprotsess. Suhtlemisvormid ja suhtlemisvahendid. Suhtlemistõkked. Kuulamine ja kuulamistehnikad ja -tõkked. Tagasisidestamine. Vaatasime erinevaid videoid ja arutlesime koos nende üle. Milliseid suhtlemise viise, mõjutusvõtteid ja näoilmeid me märkasime. Pidime valima ühe video ja seda kirjalikult analüüsima.
+        Suhtlemiskompetentsus ja selle arendamise võimalused. Suhtlemine kui kommunikatsiooniprotsess. Suhtlemisvormid ja suhtlemisvahendid. Suhtlemistõkked. Kuulamine ja kuulamistehnikad ja -tõkked. Tagasisidestamine. Vaatasime erinevaid videoid ja arutlesime koos nende üle. Milliseid suhtlemise viise, mõjutusvõtteid ja näoilmeid me märkasime. Pidin valima ühe video ja seda kirjalikult analüüsima.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://docs.google.com/document/d/1kPZUGCkJTL_FcHTY17rO6vc1L_9jK-FtttclfsvIvSw/edit?usp=sharing" target="_blank">suhtlemisel põhineva salvestuse analüüs</a>
@@ -476,7 +476,7 @@ export const ArvutivõrkudeAlused = () => {
         arvutivõrkude alused
       </Typography>
       <p className={classes.sisutekst}>
-        Kursusel viisime end kurssi erinevate arvutivõrkude kasutamise põhimõtetega. Võrgunduse alustega tutvumine ja test, tegime erinevaid võrke, lisasime seadmeid ja ühendasime need omavahel. Kasutasime virtuaalmasinat ja Ciscot.
+        Kursusel viisin end kurssi erinevate arvutivõrkude kasutamise põhimõtetega. Võrgunduse alustega tutvumine ja test, tegin erinevaid võrke, lisasin seadmeid ja ühendasin need omavahel. Kasutasin virtuaalmasinat ja <i>Cisco't</i>.
       </p>
       <Grid style={{ display: "flex", justifyContent: "center" }}>
         <img width="30%" src={libutigu5} />
@@ -498,7 +498,7 @@ export const InfoturbeAlused = () => {
         infoturbe alused
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised infoturbe põhimõtetest ja kehtivast seadusandlusest. Lõime linux terminalis kataloogi ja pidime selle kopeerima teise arvutisse. Veel pidime kopeerima asju õpetaja arvutisse, looma txt faili, pingima õpetaja arvutit ja kommenteerima käsurealt.
+        Kursuse raames omandasin teadmised infoturbe põhimõtetest ja kehtivast seadusandlusest. Lõin <i>Linux</i> terminalis kataloogi ja pidin selle kopeerima teise arvutisse. Veel pidin kopeerima asju õpetaja arvutisse, looma txt faili, <i>ping'ima</i> õpetaja arvutit ja kommenteerima käsurealt.
       </p>
 
     </>
@@ -515,7 +515,7 @@ export const ITSüsteemideRiistvara = () => {
         IT süsteemide riistvara
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised arvutitest ja nendega seotud seadmetest. Võtsime arvuti ja tegime selle lahti, pidime leidma emaplaadi ja vahetama termopastat. Võtsime serveri ja tegime selle lahti, lisasime RAMi ja ühendasime monitoriga ja vaatasime spetsifikatsioone. Õppisime kasutama projektorit. Pidime internetist leidma kuni 3000 euro väärtuses orienteerumise läbiviimiseks tehnikat.
+        Kursuse raames omandasin teadmised arvutitest ja nendega seotud seadmetest. Võtsin arvuti ja tegin selle lahti, pidin leidma emaplaadi ja vahetama termopastat. Võtsin serveri ja tegime selle lahti, lisasin RAMi, ühendasin monitoriga ning vaatasin spetsifikatsioone. Õppisin kasutama projektorit. Pidin internetist leidma kuni 3000 euro väärtuses orienteerumise läbiviimiseks tehnikat.
       </p>
     </>
   )
@@ -531,7 +531,7 @@ export const Operatsioonisüsteemid = () => {
         operatsioonisüsteemid
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised erinevatest operatsioonsüsteemidest. Windows 10 operatsioonsüsteemi paigaldus. Lõime virtuaalmasina ja paigaldasime sinna Windows10, installisime erinevaid programme ja vaatasime terminali. Linux operatsioonisüsteemi paigaldus. Lõime virtuaalmasina ja paigaldasime sinna Ubuntu, installisime käsurealt erinevaid asju. Mac opertasioonsüsteemi paigaldus. Lõime virtuaalmasina ja paigaldasime sinna MacOS, installisime erinevaid programme ja lisasime kasutajaid
+        Kursuse raames omandasin teadmised erinevatest operatsioonsüsteemidest. <i>Windows</i> 10 operatsioonsüsteemi paigaldus. Lõin virtuaalmasina ja paigaldasin sinna <i>Windows</i> 10, installisin erinevaid programme ja vaatasin terminali. <i>Linux</i> operatsioonisüsteemi paigaldus. Lõin virtuaalmasina ja paigaldasin sinna <i>Ubuntu</i>, installisin käsurealt erinevaid asju. <i>Mac</i> operatsioonsüsteemi paigaldus. Lõin virtuaalmasina ja paigaldasin sinna <i>MacOS</i>, installisin erinevaid programme ja lisasin kasutajaid.
       </p>
 
     </>
@@ -548,7 +548,7 @@ export const ErialaneMatemaatika = () => {
         erialane matemaatika
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised matemaatilisest loogikast. Õpime positsioonilisi arvusüsteeme, lausearvutust, predikaatarvutust ja tõeväärtustabeli koostamist. Välja mõelda praktilise töö teema, valim, uuritavad tunnused ja küsimused. Viia läbi küsitlus ning selle põhjal koostada analüüsitav andmestik, koostada ja ette kanda esitlus tulemustest.
+        Kursuse raames omandasin teadmised matemaatilisest loogikast. Õppisin positsioonilisi arvusüsteeme, lausearvutust, predikaatarvutust ja tõeväärtustabeli koostamist. Pidin välja mõtlema praktilise töö teema. Valisin uuritavad tunnused ja küsimused. Viisin läbi küsitluse ning selle põhjal koostasin analüüsitava andmestiku, koostasin ja kandsin ette esitluse tulemustest.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://docs.google.com/presentation/d/1LIASYz6xIPSZUFppP0iwLgmjQ_jPSgPNJucth08lqrI/present?slide=id.p" target="_blank">tartus elamine</a>
@@ -567,8 +567,8 @@ export const ObjektorienteeritudProgrammeerimine = () => {
         objektorienteeritud programmeerimine
       </Typography>
       <p className={classes.sisutekst}>
-        Koostab lähekoodi lähtudes lähteülesande põhjal koostatud plokkskeemist; koostab vigadeta lähekoodi vastavalt programmeerimiskeele reeglitele; kirjeldab koodi tööpõhimõtet vastavalt programmeerimiskeele ülesehitusele.
-        Kasutatud vahendid: Virtuaalmasin (Win10) ja Javascript
+        Koostasin lähekoodi lähtudes lähteülesande põhjal koostatud plokkskeemist; koostasin vigadeta lähekoodi vastavalt programmeerimiskeele reeglitele; kirjeldasin koodi tööpõhimõtet vastavalt programmeerimiskeele ülesehitusele.
+        Kasutatud vahendid: Virtuaalmasin (Windows 10) ja JavaScript.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://github.com/marievaba/weather" target="_blank">weather project</a>
@@ -596,7 +596,7 @@ export const ProgrammeerimiseAlused = () => {
         programmeerimise alused
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised programmeerimise algoritmilistest põhimõtetest. Õpime muutujaid ja andmetüüpe, matemaatilisi operaatoreid, tingimuslauseid ning tsükleid. Loome virtuaalarvuti kooli serveris ja laeme sinna tööks vajalikud programmid. Õppsime JavaScripti põhitõdesid, lõime mitu erinevat programmi.
+        Kursuse raames omandasin teadmised programmeerimise algoritmilistest põhimõtetest. Õppisin muutujaid ja andmetüüpe, matemaatilisi operaatoreid, tingimuslauseid ning tsükleid. Lõin virtuaalarvuti kooli serveris ja laadisin sinna tööks vajalikud programmid. Õppisin <i>JavaScript'i</i> põhitõdesid, lõin mitu erinevat programmi.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://github.com/marievaba/prog_alused/tree/main/iseseisev" target="_blank">tehtud tööd</a>
@@ -616,7 +616,7 @@ export const ITKorraldus = () => {
         IT korraldus
       </Typography>
       <p className={classes.sisutekst}>
-        Organisatsioon ja IT struktuur. Äriorganisatsiooni ja IT struktuuri vahelised seosed. Organisatsiooni eesmärkide mõistmine, kasutajagrupid ja nende vajadused infosüsteemile. Organisatsiooni veebileht. Selle roll ettevõtte toote/teenuse turundamisel (koostöös ettevõtluse aluste teemaga). Infosüsteemi olulisus organisatsiooni tegevuste toimimisel. Kooli infosüsteemi analüüs Grupitööna pidime analüüsima Tartu Rakendusliku Kolledži infosüsteemi. Koostasime veebilehe analüüsi. Lisaks külastasime ettevõtet ja kirjutasime selle kohta raporti.
+        Organisatsioon ja IT struktuur. Äriorganisatsiooni ja IT struktuuri vahelised seosed. Organisatsiooni eesmärkide mõistmine, kasutajagrupid ja nende vajadused infosüsteemile. Organisatsiooni veebileht ja selle roll ettevõtte toote/teenuse turundamisel (koostöös ettevõtluse aluste teemaga). Infosüsteemi olulisus organisatsiooni tegevuste toimimisel. Kooli infosüsteemi analüüs grupitööna. Pidime analüüsima Tartu Rakendusliku Kolledži infosüsteemi. Koostasin veebilehe analüüsi. Lisaks külastasime ettevõtet ja kirjutasin selle kohta raporti.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://docs.google.com/spreadsheets/d/1gcmmSHzxsSrkeNk_ANx-V8FS3t7rDUU5ZuMryDOlNAs/edit?usp=sharing" target="_blank">veebilehe analüüs</a>
@@ -638,7 +638,7 @@ export const MeeskonnatööAlused = () => {
         meeskonnatöö alused
       </Typography>
       <p className={classes.sisutekst}>
-        Projektiorganisatsiooni struktuur. Meeskonnatöö projektides. Meeskonnatöö kavandamine ja käivitamine ning meeskonnajuhi tegevused. Koostöövormid, nende põhimõtted ja kasutamine meeskonnatöös. Pidime looma meeskonna ja korraldama kursusele tuuri mõnda ettevõttesse, lisaks pidime kogu protsessi dokumenteerima. Kursuse lõpus pidime leidma meeskonna, kellega lähme üksikule saarele. Eelarveks oli 1500 eurot ja selle raha eest pidime leidma internetist vajalikud vahendid ellujäämiseks.
+        Projektiorganisatsiooni struktuur. Meeskonnatöö projektides. Meeskonnatöö kavandamine ja käivitamine ning meeskonnajuhi tegevused. Koostöövormid, nende põhimõtted ja kasutamine meeskonnatöös. Pidin looma meeskonna ja korraldama kursusele tuuri mõnda ettevõttesse, lisaks pidin kogu protsessi dokumenteerima. Kursuse lõpus pidin leidma meeskonna, kellega lähme üksikule saarele. Eelarveks oli 1500 eurot ja selle raha eest pidime leidma internetist vajalikud vahendid ellujäämiseks.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://docs.google.com/document/d/1haqGsC2PerF-EnHdrSwb7D5IK1MLjSm9Di1ZkRNjiRM/edit?usp=sharing" target="_blank">õppekäik ettevõttesse Redwall</a>
@@ -660,7 +660,7 @@ export const ProjektihalduseAlused = () => {
         projektihalduse alused
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames omandatakse teadmised projektijuhtimisest. Läbime kursuse jooksul projekti eesmärgi, tegevuskava, skoobi ja projektijuhtimise meetodi teemad. SWOT analüüs. Tutvusime erinevate projektijuhtimise meetoditega ja koostasime meeskonnatööna esitluse ühest projektijhtimise meetodist. Pidime valima ühe projektihalduse programmi ja tegema selle kohta esitluse.
+        Kursuse raames omandasin teadmised projektijuhtimisest. Läbisin kursuse jooksul projekti eesmärgi, tegevuskava, skoobi ja projektijuhtimise meetodi teemad. <i>SWOT</i> analüüs. Tutvusin erinevate projektijuhtimise meetoditega ja koostasime meeskonnatööna esitluse ühest projektijuhtimise meetodist. Pidin valima ühe projektihalduse programmi ja tegema selle kohta esitluse.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://docs.google.com/presentation/d/1U49bgFVQzX_FMIJG7bfPzovB4kB-7w8JVoHUV5homJw/present?slide=id.p" target="_blank">koolitusfirma koduleht agile meetodil</a>
@@ -676,10 +676,16 @@ export const GraafilineDisainJaMultimeedia = () => {
       <Typography
         className={`${classes.alampealkiri} h2-header`}
       >
-        graafiline disain & multimeedia toode disain ja tootearendus
+        graafiline disain & multimeedia toote disain ja tootearendus
       </Typography>
       <p className={classes.sisutekst}>
-        Olen lõpetanud Tartu Kunstikooli Kujundaja erialal.
+        Olen lõpetanud Tartu Kunstikooli kujundaja eriala.
+        Minu oskusi illustreerib Tartu Kunstikoolis loodud portfoolio, kust võib leida mitmesuguseid töid.<br></br>
+         Filmisin ja monteerisin mitmeid erineva lähteülesandega videoid, näiteks muusikale taustavideod, antireklaam ja <i>stop motion</i> õudusfilm. Praktikal tegin firmale nende pakutavaid huvitegevusi tutvustava video. Lisaks telliti minult Kirjanduslinn Tartu jaoks video ja Forseliuse kooli perepäeva video.<br></br>
+        Iga kursuse lõpus korraldasid tudengid projekti raames enda näituse. Pidin leidma mentori ja temaga koos valima sobivad tööd. Näitusel esitlesin oma videoid, mõnd maali, ühte kaussi ja tassi. Sain võimaluse kasutada tervet ühte tuba. Viisin sinna teleka, kust näitasin oma videoid. Istumiseks ja vaatamiseks sai kohale toodud tugitool, millele asetasin enda õmmeldud lapiteki. Seinale paigutasin enda tehtud maalid ja aknalauale minu loodud keraamikat.<br></br>
+        Iga kursus pidi ise looma ajakirja, alustades ideest ja lõpetades füüsilise tootega. Jagasime kujundajate vahel ülesanded ära. Mina pidin kirjutama artikli välismaal õppimisest. Etteantud kriteeriumite järgi töötlesin foto, paigutasin pealkirjad, kujunduselemendid ja teksti.<br></br>
+        Täiesti eraldiseisvaks projektiks on Libutigu. Selle idee autoriteks oleme mina ja mu sõbranna. Erilist eesmärki või tagamõtet Libutigul ei olegi, lihtsalt naljakas asi, mida igal pool kasutada või linnas tänavatele kleepida. Oleme oma kleepsudega osalenud vähemalt neljal näitusel ja kavatseme seda ka kindlasti tulevikus teha.<br></br>
+        Portfooliost leiab lisaks minu tehtud tootefotod. Need on kõik tehtud minu enda loodud keraamikast: kausid, tass, viinapits ja seebialus.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://marievaba.wixsite.com/mvaba" target="_blank">Tartu Kunstikooli portfoolio</a>
@@ -698,7 +704,7 @@ export const AsjaajamiseAlused = () => {
         asjaajamise alused
       </Typography>
       <p className={classes.sisutekst}>
-        Lähteülesandeks oli luua erialane CV,  praktikakoha taotlemiseks motivatsiooni -ja kaaskiri ning eraldi motivatsioonikiri. Olen kursuse varasemalt läbinud. Koostasime CV, praktikale kandideerimikseks vajalikud dokumendid ja kirjutasime motivatsioonikirja teemal "Kus näen end viie aasta pärast?"
+        Lähteülesandeks oli luua erialane CV,  praktikakoha taotlemiseks motivatsiooni -ja kaaskiri ning eraldi motivatsioonikiri. Olen kursuse varasemalt läbinud. Koostasime CV, praktikale kandideerimiseks vajalikud dokumendid ja kirjutasime motivatsioonikirja teemal "Kus näen end viie aasta pärast?"
       </p>
       <Grid style={{ display: "flex", justifyContent: "center" }}>
         <img width="50%" src={libutigu7} />
@@ -717,7 +723,7 @@ export const EttevõtluseAlused = () => {
         ettevõtluse alused & majanduse alused
       </Typography>
       <p className={classes.sisutekst}>
-        Olen kursuse varemalt läbinud ja kandsin VÕTAga üle. Kasutasime TOY meetodit. Valisime tiimid ja panime paberile kirja 20 erinevat ideed, sealt valisime kolm parimat ja edasi ühe, millega tegeleda. Tegime liftikõne ja erinevaid esitlusi. Kuruse lõpuks saime oma toote valmis. Selleks oli korgipuu.
+        Olen kursuse varemalt läbinud ja kandsin VÕTAga üle. Kasutasime <i>TOY</i> meetodit. Valisime tiimid ja panime paberile kirja 20 erinevat ideed, sealt valisime kolm parimat ja edasi ühe, millega tegeleda. Tegime liftikõne ja erinevaid esitlusi. Kursuse lõpuks saime oma toote valmis. Selleks oli korgipuu.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://docs.google.com/presentation/d/1ml141qCw6NePLjYmfLiw4ad6-KzLX4wHkvDmNG_d6og/present?slide=id.p" target="_blank">korgipuu</a>
@@ -736,7 +742,7 @@ export const KarjääriplaneerimiseAlused = () => {
         karjääriplaneerimise alused
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse raames viime end kurssi kooli infosüsteemiga ja õppetöökorraldusega. Tartu Rakendusliku Kolledži infosüsteemi ja koduleheküljega tutvumine. Töövahendusportaalide info otsimine ja kaardistamine. Pidime leidma erinevaid töökuulutusi ja koostama neist dokumendi.
+        Kursuse raames viisin end kurssi kooli infosüsteemiga ja õppetöökorraldusega.Tutvusin Tartu Rakendusliku Kolledži infosüsteemi ja koduleheküljega. Töövahendusportaalide info otsimine ja kaardistamine. Pidin leidma erinevaid töökuulutusi ja koostama neist dokumendi.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://docs.google.com/document/d/1O6h1sxmCYk5UxCgBWxFdf6xc-bqgUV7qTHFCyOJxyUU/edit?usp=sharing" target="_blank">infosüsteem ja kodulehekülg</a>
@@ -755,7 +761,7 @@ export const SuhtlemisÕpetus = () => {
         suhtlemisõpetus
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse olen varasemalt läbinud ja kandsin VÕTAga üle. Õppisime erinevaid suhtlemise viise ja võtteid. Pidime meeskonnas tegema antireklaami vabalt valitud tootele.
+        Kursuse olen varasemalt läbinud ja kandsin VÕTAga üle. Õppisin erinevaid suhtlemise viise ja võtteid. Pidin meeskonnas tegema antireklaami vabalt valitud tootele.
       </p>
       <CustomButton style={{ margin: 4 }}>
         <a className={classes.cvLink} href="https://www.youtube.com/watch?v=axnGtwRLlyg&ab_channel=MarieVabam%C3%A4gi" target="_blank">antireklaam</a>
@@ -774,7 +780,7 @@ export const Töökeskkonnaohutus = () => {
         töökeskkonnaohutus
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse olen varasemalt läbinud ja kandsin VÕTAga üle. Õppisime erinevaid tööohutuse võtteid ja ergonoomilisi töövahendeid. Pidin koostama esitluse võimalikest örgonoomilistest töövahenditest. Õppisime turvaliselt kasutama redelit.
+        Kursuse olen varasemalt läbinud ja kandsin VÕTAga üle. Õppisin erinevaid tööohutuse võtteid ja ergonoomilisi töövahendeid. Pidin koostama esitluse võimalikest ergonoomilistest töövahenditest. Õppisin turvaliselt kasutama redelit.
       </p>
       {/* <Grid style={{ display: "flex", justifyContent:"center" }}>
       <img width="60%" src={libutigu3} />
@@ -793,7 +799,7 @@ export const TöötamiseÕiguslikudAlused = () => {
         töötamise õiguslikud alused
       </Typography>
       <p className={classes.sisutekst}>
-        Kursuse olen varasemalt läbinud ja kandsin VÕTAga üle. Õppisime erinevaid autoriõiguseid. Pidime valima ühe teose ja seda muutma nii, et sellega ei tekiks autoriõiguse probleeme.
+        Kursuse olen varasemalt läbinud ja kandsin VÕTAga üle. Õppisin erinevaid autoriõiguseid. Pidin valima ühe teose ja seda muutma nii, et sellega ei tekiks autoriõiguse probleeme.
       </p>
       <Grid style={{ display: "flex", justifyContent: "center" }}>
         <img width="60%" src={libutigu4} />
@@ -807,8 +813,8 @@ export const ArenguportfoolioEsitamine = () => {
   return (
     <>
       <p className={classes.sisutekst}>
-        Arenguportfoolio loomise kursuse raames õpib õpilane oma erialast arengut analüüsima. Koostame elektroonilise arenguportfoolio põhja, mida iseseivalt hakkame õpingute jooksul täiendama.
-        Enesetuvustus arenguportfoolio jaoks. Sissejuhatus ainesse- rääkisime reeglitest, teemadest ja hindamisest. Vaatasime üle, mis on arenguportfoolio, millel see põhineb ning nägime näiteid mõningatest eelmiste aastate töödest. Tunni raames pidin Google Sites looma arenguportfoolio põhja ja tegema valmis portfoolio struktuuri koos enesetutvustusega. Õppisin käsitlema Google Sites'i, varasem kokkupuude puudus.
+        Arenguportfoolio loomise kursuse raames õpib õpilane oma erialast arengut analüüsima. Koostasime elektroonilise arenguportfoolio põhja, mida iseseisvalt täiendasin õpingute jooksul.
+        Enesetutvustus arenguportfoolio jaoks. Sissejuhatus ainesse- rääkisime reeglitest, teemadest ja hindamisest. Vaatasime üle, mis on arenguportfoolio, millel see põhineb ning nägime näiteid mõningatest eelmiste aastate töödest. Tunni raames pidin <i>Google Sites</i> looma arenguportfoolio põhja ja tegema valmis portfoolio struktuuri koos enesetutvustusega. Õppisin käsitlema <i>Google Sites'i</i>, varasem kokkupuude puudus.
       </p>
     </>
   )

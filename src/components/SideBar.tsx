@@ -51,11 +51,11 @@ export const SideBar = () => {
       <CustomButton fullWidth={true} onClick={() => window.location.hash = "projektijuhtimise-alused"}>
         Projektijuhtimise alused
       </CustomButton>
-      <CustomButton fullWidth={true} onClick={() => window.location.hash = "varasemalt-läbitud-ained"}>
-        varasemalt läbitud ained
-      </CustomButton>
       <CustomButton fullWidth={true} onClick={() => window.location.hash = "karjääriplaneerimine-ja-ettevõtlus"}>
         Karjääriplaneerimine ja ettevõtlus
+      </CustomButton>
+      <CustomButton fullWidth={true} onClick={() => window.location.hash = "varasemalt-läbitud-ained"}>
+        varasemalt läbitud ained
       </CustomButton>
       <CustomButton fullWidth={true} onClick={() => window.location.hash = "arenguportfoolio-loomine-ja-esitamine"}>
         Arenguportfoolio loomine ja esitamine

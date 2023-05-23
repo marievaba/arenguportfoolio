@@ -177,8 +177,8 @@ export const NavBar = () => {
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("arvutite-riistvara-ja-võrgud") }} to="/moodulid#arvutite-riistvara-ja-võrgud" onClick={handleClose}>arvutite riistvara ja võrgud</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("programmeerimise-alused") }} to="/moodulid#programmeerimise-alused" onClick={handleClose}>programmeerimise alused</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("projektijuhtimise-alused") }} to="/moodulid#projektijuhtimise-alused" onClick={handleClose}>projektijuhtimise alused</Link></li>
-                      <li><Link className="nav-link nav-link-sub" style={{ color: isActive("varasemalt-läbitud-ained") }} to="/moodulid#varasemalt-läbitud-ained" onClick={handleClose}>varasemalt läbitud ained</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("karjääriplaneerimine-ja-ettevõtlus") }} to="/moodulid#karjääriplaneerimine-ja-ettevõtlus" onClick={handleClose}>karjääriplaneerimine ja ettevõtlus</Link></li>
+                      <li><Link className="nav-link nav-link-sub" style={{ color: isActive("varasemalt-läbitud-ained") }} to="/moodulid#varasemalt-läbitud-ained" onClick={handleClose}>varasemalt läbitud ained</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("arenguportfoolio-loomine-ja-esitamine") }} to="/moodulid#arenguportfoolio-loomine-ja-esitamine" onClick={handleClose}>arenguportfoolio loomine ja esitamine</Link></li>
                     </ul>
 
