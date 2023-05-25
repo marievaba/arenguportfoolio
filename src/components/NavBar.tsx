@@ -174,6 +174,9 @@ export const NavBar = () => {
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("veebikujundus") }} to="/moodulid#veebikujundus" onClick={handleClose}>veebikujundus</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("veebiarendus-ja-veebihaldus") }} to="/moodulid#veebiarendus-ja-veebihaldus" onClick={handleClose}>veebiarendus ja veebihaldus</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("kasutajakogemuse-analüüs") }} to="/moodulid#kasutajakogemuse-analüüs" onClick={handleClose}>kasutajakogemuse analüüs</Link></li>
+
+                      <li><Link className="nav-link nav-link-sub" style={{ color: isActive("psühholoogia-ja-suhtlemine") }} to="/moodulid#psühholoogia-ja-suhtlemine" onClick={handleClose}>psühholoogia ja suhtlemine</Link></li>
+
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("arvutite-riistvara-ja-võrgud") }} to="/moodulid#arvutite-riistvara-ja-võrgud" onClick={handleClose}>arvutite riistvara ja võrgud</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("programmeerimise-alused") }} to="/moodulid#programmeerimise-alused" onClick={handleClose}>programmeerimise alused</Link></li>
                       <li><Link className="nav-link nav-link-sub" style={{ color: isActive("projektijuhtimise-alused") }} to="/moodulid#projektijuhtimise-alused" onClick={handleClose}>projektijuhtimise alused</Link></li>

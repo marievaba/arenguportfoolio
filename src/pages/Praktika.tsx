@@ -10,6 +10,7 @@ import proto from "../images/proto.png";
 import proto1 from "../images/proto1.png";
 import tabelid from "../images/tabelid.png";
 import CustomButton from '../components/CustomButton';
+import { GoUpButton } from '../components/GoUpButton';
 
 const Praktika = () => {
   useEffect(() => {
@@ -99,8 +100,10 @@ const Praktika = () => {
         <Grid style={{ display: "flex", justifyContent: "center" }}>
           <img width="60%" src={libutigu} />
         </Grid>
+        <Grid className="mobile-only" item md={12}>
+          <Grid className={classes.padding} />
+        </Grid>
       </Grid>
-
 
       <Grid
         item
@@ -152,6 +155,9 @@ const Praktika = () => {
         item
         md={6}
       >
+        <Grid className="mobile-only" item md={12}>
+          <Grid className={classes.shortDividerBlack} />
+        </Grid>
         <Typography
           className={`${classes.typo} h1-header-praktika`}
         >
@@ -216,8 +222,11 @@ const Praktika = () => {
           <img width="20%" src={libutigu1} />
           <img width="20%" src={libutigu1} />
         </Grid>
+        <Grid className="mobile-only" item md={12}>
+          <Grid className={classes.padding} />
+        </Grid>
       </Grid>
-
+      
       <Grid
         item
         md={6}
@@ -244,6 +253,7 @@ const Praktika = () => {
         <img width="100%" src={proto} />
 
       </Grid>
+      <GoUpButton />
     </Grid>
   )
 }

@@ -40,7 +40,7 @@ body {
 
 .marie-text:hover {
   cursor: pointer;
-  color: #F17E92;
+  color: #2e0d13;
 }
 
 .marie-text:hover + .nimi {
@@ -155,6 +155,9 @@ li {
 .eneseref-tigu-mobile {
   display: none !important;
 }
+.mobile-only {
+  display: none !important;
+}
 
 /* exceptional breakpoints */
 @media (max-width: 980px) {
@@ -212,6 +215,9 @@ li {
   }
   .desktop-only {
     display: none !important;
+  }
+  .mobile-only {
+    display: inline !important;
   }
 }
 /* MUI md BREAKPOINT END */

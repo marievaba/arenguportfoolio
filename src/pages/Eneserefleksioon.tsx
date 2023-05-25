@@ -42,8 +42,11 @@ const Eneserefleksioon = () => {
           <Grid>
           <p className={classes.sisutekst}>Esimesel aastal loodud arenguportfoolio.</p>
           </Grid>
-        <Grid style={{ display: "flex", justifyContent: "center" }}>
+        <Grid className="desktop-only" style={{ display: "flex", justifyContent: "center" }}>
           <img width="45%" src={libutigu} />
+        </Grid>
+        <Grid className="mobile-only">
+          <Grid className={classes.shortDividerBlack} />
         </Grid>
       </Grid>
       

@@ -43,6 +43,10 @@ const Moodulid = () => {
         handleScroll(kasutajakogemusRef);
         break;
       }
+      case "/moodulid#psühholoogia-ja-suhtlemine": {
+        handleScroll(psühholoogiaRef);
+        break;
+      }
       case "/moodulid#arvutite-riistvara-ja-võrgud": {
         handleScroll(riistvaraRef)
         break;

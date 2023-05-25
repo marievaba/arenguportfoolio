@@ -39,7 +39,7 @@ export const SideBar = () => {
       <CustomButton fullWidth={true} onClick={() => window.location.hash = "kasutajakogemuse-analüüs"}>
         Kasutajakogemuse analüüs
       </CustomButton>
-      <CustomButton fullWidth={true} onClick={() => window.location.hash = "arvutite-riistvara-ja-võrgud"}>
+      <CustomButton fullWidth={true} onClick={() => window.location.hash = "psühholoogia-ja-suhtlemine"}>
         Psühholoogia ja suhtlemine
       </CustomButton>
       <CustomButton fullWidth={true} onClick={() => window.location.hash = "arvutite-riistvara-ja-võrgud"}>
