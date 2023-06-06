@@ -23,7 +23,7 @@ const Enesetutvustus = () => {
         <img className={classes.image} src={image} />
         <Grid className="buttons-container" item style={{ paddingTop: 20 }}>
           <CustomButton style={{ margin: 4 }}>
-            <a className={classes.cvLink} href="https://docs.google.com/document/d/1KZA6vrWZoDUC6Ljf9sStSW41s0_8Y0oUHMGqYg5O-DE/edit?usp=sharing" target="_blank">cv</a>
+            <a className={classes.cvLink} href="https://drive.google.com/file/d/1VWjzFrgfKpzMXYCH5ktFBKzC8fs_4M6X/view?usp=sharing" target="_blank">cv</a>
           </CustomButton>
           <CustomButton style={{ margin: 4 }}>
             <a className={classes.cvLink} href="https://github.com/marievaba" target="_blank">github </a>

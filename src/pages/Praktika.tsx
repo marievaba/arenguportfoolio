@@ -85,7 +85,7 @@ const Praktika = () => {
           näidanud üles suurt huvi ja entusiasmi veebiarenduse vastu ning
           on väga pühendunud oma oskuste täiendamisele selles
           valdkonnas. Praktikant on väga kiiresti õppinud looma keeruka
-          veebirakenduse visuaalselt poolt ning saab edukalt hakkama 
+          veebirakenduse visuaalset poolt ning saab edukalt hakkama 
           <i> HTML</i>, <i>CSS</i> ja <i>JavaScript</i> koodi kirjutamisega. Praktikant on
           suutnud kiiresti kohaneda uute tehnoloogiatega ja õppinud uusi
           programmeerimisvahendeid, mis on oluline, et olla edukas
@@ -169,6 +169,9 @@ const Praktika = () => {
         </p>
         <CustomButton style={{ margin: 4 }}>
           <a className={classes.cvLink} href="https://docs.google.com/presentation/d/1OdWvR2VNg-1ZFuuUnroBrT3RWrsUYWyBfBMH8Fm__WA/edit?usp=sharing" target="_blank">praktika esitlus</a>
+        </CustomButton>
+        <CustomButton style={{ margin: 4 }}>
+          <a className={classes.cvLink} href="https://drive.google.com/file/d/1hBYBQ5-kP-LOK_sNH2VqGlnLLjNMB8ZY/view?usp=sharing" target="_blank">soovituskiri</a>
         </CustomButton>
 
         <Grid className={classes.padding} />
